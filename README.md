@@ -24,15 +24,32 @@ Bu proje, ASP.NET 8 Core MVC kullanarak geliştirdiğimiz bir otel rezervasyon w
 
 ## Otel Rezervasyon Sitesi Görüntüleri
 
+###Ana Sayfa
+
+
+Otel Genel Bakış
+
+
+Konaklama
+
+
+Restoran
+
+
+Teklifler
+
+
+Kayıt Ol / Giriş Yap
+
+
+Hizmetlerimiz
 
 
 
 
 
-### Notlar:
-- Kullanıcı Adı:**zeynep-tkn**
-- Ad:**"Zeynep Tekin**
-- Kullanıcı Adı:**gamzeunl**
-- Ad:**Gamze Ünal** 
+## Katkıda Bulunanlar
 
+- **Zeynep Tekin** - [zeynep-tkn](https://github.com/zeynep-tkn)
+- **Gamze Ünal** - [gamzeunl](https://github.com/gamzeunl)
 
