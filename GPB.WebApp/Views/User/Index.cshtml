@@ -1,0 +1,50 @@
+﻿@using GPB.Application.Dtos.UserDto
+@model IEnumerable<GetByIdUserDto>;
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/site.css" /> <!-- CSS dosyanızı bağlayın -->
+</head>
+<body>
+    <div class="container">
+        <h1>@ViewData["Title"]</h1>
+
+        <p>
+            <a href="@Url.Action("Create")" class="btn btn-primary">Create New User</a>
+        </p>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>UserName</th>
+                    <th>Role</th>
+                    <th>Creation Date</th>
+                    <th>Update Date</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var user in Model)
+                {
+                    <tr>
+                        <td>@user.UserId</td>
+                        <td>@user.UserName</td>
+                        <td>@user.Role</td>
+                        <td>@user.CreationDate</td>
+                        <td>@user.UpdateDate</td>
+                        <td>
+                            <a href="@Url.Action("Edit", new { id = user.UserId })" class="btn btn-warning">Edit</a>
+                            <a href="@Url.Action("Delete", new { id = user.UserId })" class="btn btn-danger">Delete</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+    <script src="~/js/site.js"></script> <!-- JavaScript dosyanızı bağlayın -->
+</body>
+</html>

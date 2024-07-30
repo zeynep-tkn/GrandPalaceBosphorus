@@ -1,0 +1,417 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otel Genel Bakış Sayfası</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            margin: 0;
+            padding: 0;
+            color: white;
+        }
+
+
+        /* Başlık konteyneri stilleri */
+        .header-container {
+            position: relative;
+            width: 100%;
+            height: 600px;
+            overflow: hidden;
+        }
+
+        .hotel-logo {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin-bottom: 10px; /* Örneğin, logonun altında biraz boşluk bırakmak için */
+            margin-top: 60px; /* Logoyu aşağı itmek için eklenen stil */
+            margin-left: 30px; /* Logoyu aşağı itmek için eklenen stil */
+            z-index: 2; /* Hotel adı ve logo için z-index değeri */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Hafif gölgeleme */
+        }
+
+            .hotel-logo i {
+                font-size: 1.8em;
+                margin-right: 0.5em;
+            }
+
+        .hotel-name {
+            position: absolute;
+            top: 30px;
+            left: 80px; /* Logo sonrası mesafe */
+            font-size: 1.8em; /* Yazı boyutu büyütüldü */
+            font-weight: bold; /* Kalın font */
+            font-style: italic;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Hafif gölgeleme */
+            z-index: 2; /* Hotel adı ve logo için z-index değeri */
+        }
+
+        /* Slider container */
+        .header-slideshow {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+
+            .header-slideshow img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                position: absolute;
+                opacity: 0;
+                transition: opacity 1s ease-in-out;
+                z-index: 0;
+            }
+
+                .header-slideshow img.active {
+                    opacity: 0.7; /* Transparanlık eklendi */
+                }
+
+        /* Overlay container */
+        .header-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.5);
+            text-align: center;
+            z-index: 5;
+        }
+
+        /* İçerik alanı */
+        .header-content {
+            max-width: 600px;
+            padding: 20px;
+        }
+
+        /* Genel bakış başlığı */
+        .general-overview {
+            font-size: 3.5em;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8); /* Güçlü gölgeleme */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); /* Resmin ortasında hizalanma */
+        }
+
+        /* Otel cümlesi */
+        .hotel-sentence {
+            font-size: 1.3em;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+
+        .gallery-container {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .gallery-title {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .gallery {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .slides {
+            display: flex;
+            overflow: hidden;
+            transition: transform 0.5s ease;
+        }
+
+        .slide {
+            min-width: 100%;
+        }
+
+            .slide img {
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+                transition: transform 0.5s ease;
+            }
+
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1;
+            cursor: pointer;
+            background-color: rgba(0, 0, 0, 0.3);
+            color: white;
+            border: none;
+            outline: none;
+            font-size: 20px;
+            padding: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .prev {
+            left: 10px;
+        }
+
+        .next {
+            right: 10px;
+        }
+
+            .prev:hover, .next:hover {
+                background-color: rgba(0, 0, 0, 0.6);
+            }
+
+        .slide img:hover {
+            transform: scale(1.1);
+        }
+
+
+        .overview-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            padding: 50px 20px;
+            background-color: #000;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+            .overview-container img {
+                width: 40%;
+                border-radius: 10px;
+                transition: transform 0.3s ease;
+            }
+
+                .overview-container img:hover {
+                    transform: scale(1.1);
+                }
+
+        .overview-text {
+            width: 60%;
+            text-align: left;
+            color: #fff;
+        }
+
+            .overview-text h2 {
+                font-size: 2em;
+                margin-bottom: 20px;
+            }
+
+            .overview-text p {
+                font-size: 1.2em;
+                line-height: 1.6;
+            }
+
+        .section-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            padding: 50px 20px;
+            background-color: black;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+            .section-content img {
+                width: 50%;
+                border-radius: 10px;
+                transition: transform 0.3s ease;
+            }
+
+                .section-content img:hover {
+                    transform: scale(1.1);
+                }
+
+        .section-text {
+            width: 50%;
+            text-align: left;
+        }
+
+            .section-text h2 {
+                font-size: 2em;
+                margin-bottom: 20px;
+                color: white;
+            }
+
+            .section-text p {
+                font-size: 1.2em;
+                line-height: 1.6;
+                color: white;
+            }
+
+        .discover-more {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: white;
+            color: black;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+            .discover-more:hover {
+                background-color: black;
+                color: white;
+                transform: scale(1.05);
+            }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="hotel-logo">
+                <i class="fas fa-hotel"></i>
+            </div>
+            <div class="hotel-name">Ünal İstanbul <br /> Bosphorus</div>
+            <div class="header-slideshow">
+                <img src="~/images/genelbakis5.jpg" class="active" alt="Foto 1">
+                <img src="~/images/genelbakis1.jpg" alt="Foto 2">
+                <img src="~/images/genelbakis6.jpg alt="Foto 3">
+                <img src="~/images/genelbakis2.jpg" alt="Foto 4">
+            </div>
+        </div>
+    </header>
+
+    <section class="gallery-container">
+        <h2 class="gallery-title">Fotoğraf Galerisi</h2>
+        <div class="gallery">
+            <div class="slides">
+                <div class="slide"><img src="~/images/genelbakis8.jpg"alt="Fotoğraf 1"></div>
+                <div class="slide"><img src="~/images/genelbakis9.jpg" alt="Fotoğraf 2"></div>
+                <div class="slide"><img src="~/images/genelbakis4.jpg" alt="Fotoğraf 3"></div>
+                <div class="slide"><img src="~/images/genelbakis3.jpg" alt="Fotoğraf 4"></div>
+                <div class="slide"><img src="~/images/genelbakis11.jpg" alt="Fotoğraf 5"></div>
+                <div class="slide"><img src="~/images/genelbakis10.jpg" alt="Fotoğraf 6"></div>
+                <div class="slide"><img src="~/images/genelbakis12.jpg" alt="Fotoğraf 7"></div>
+                <div class="slide"><img src="~/images/genelbakis9.jpg" alt="Fotoğraf 8"></div>
+                <div class="slide"><img src="~/images/genelbakis10.jpg" alt="Fotoğraf 9"></div>
+                <div class="slide"><img src="~/images/genelbakis13.jpg" alt="Fotoğraf 10"></div>
+                <div class="slide"><img src="~/images/genelbakis14.jpg" alt="Fotoğraf 11"></div>
+                <div class="slide"><img src="~/images/genelbakis15.jpg" alt="Fotoğraf 12"></div>
+                <div class="slide"><img src="~/images/genelbakis16.jpg" alt="Fotoğraf 13"></div>
+                 <div class="slide"><img src="~/images/genelbakis17.jpg" alt="Fotoğraf 14"></div>
+                <div class="slide"><img src="~/images/genelbakis18.jpg" alt="Fotoğraf 15"></div> 
+                <div class="slide"><img src="~/images/genelbakis19.jpg" alt="Fotoğraf 16"></div>
+                 <div class="slide"><img src="~/images/genelbakis20.jpg" alt="Fotoğraf 17"></div>
+            </div>
+        </div>
+        <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+        <button class="next" onclick="plusSlides(1)">&#10095;</button>
+   
+    </section>
+
+    <section class="overview-container" id="otel-tanitimi">
+        <img src="~/images/hakkımızda.jpg">
+        <div class="overview-text">
+            <h2>Otel Tanıtımı</h2>
+            <p>Ünal Place İstanbul, İstanbul Boğazı'nın muhteşem panoramasıyla çevrili ve konuklarına eşsiz bir konaklama deneyimi sunan lüks bir oteldir. Modern olanaklar ve tarihi dokunun harmanlandığı bu özel mekan, unutulmaz bir tatil için idealdir. Otelimiz, tarihi dokuyu modern konforla birleştirerek misafirlerimize eşsiz bir deneyim sunmaktadır. İstanbul'un kalbinde yer alan otelimiz, şehrin en önemli turistik ve kültürel mekanlarına yakın konumda olup, konuklarına rahat ve lüks bir konaklama imkanı sunmaktadır.</p>
+        </div>
+    </section>
+
+    <section class="section-content" id="daha-fazla">
+        <img src="https://via.placeholder.com/600x400" alt="Section Image">
+        <div class="section-text">
+            <h2>Detaylı Bilgi</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacinia mi quis euismod ultrices. Integer id ligula et urna congue consectetur. Proin et sapien metus.</p>
+            <a href="#" class="discover-more">Daha Fazla Detay</a>
+        </div>
+    </section>
+    <section class="section-content" id="odalar-suitler">
+        <div class="section-text">
+            <h2>Odalar & Süitler</h2>
+            <p>Ünal Place İstanbul, çeşitli oda ve süit seçenekleri sunmaktadır. Her zevke uygun geniş ve modern tasarımlı odalarımızda rahatlayın ve Boğaz manzarasının keyfini çıkarın.</p>
+            <a href="/Home/Konaklama" class="discover-more">Daha Fazlasını Keşfet</a>
+        </div>
+        <img src="~/images/odalar.jpg">
+    </section>
+
+    <section class="section-content" id="restoranlar-barlar">
+        <img src="~/images/restoran.jpg">
+        <div class="section-text">
+            <h2>Restoranlar & Barlar</h2>
+            <p>Ünal Place İstanbul'un restoranlarında dünya mutfaklarından lezzetleri keşfedin ve barlarımızda özel kokteyllerin tadını çıkarın. Her öğün, otelimizde unutulmaz bir deneyime dönüşüyor.</p>
+            <a href="/Home/Restoran" class="discover-more">Daha Fazlasını Keşfet</a>
+        </div>
+    </section>
+
+    <section class="section-content" id="spa">
+        <div class="section-text">
+            <h2>Spa & Wellness</h2>
+            <p>Otelimizin spa ve wellness merkezinde kendinizi yenileyin ve rahatlayın. Uzman terapistlerimiz eşliğinde masaj, yüz bakımı ve daha birçok hizmetle stresten arının.</p>
+            <a href="/Home/Hizmetlerimiz" class="discover-more">Daha Fazlasını Keşfet</a>
+        </div>
+        <img src="~/images/spa.jpg">
+    </section>
+
+    <section class="section-content" id="etkinlikler">
+        <img src="~/images/etkinlikler.jpg">
+        <div class="section-text">
+            <h2>Etkinlikler</h2>
+            <p>Ünal Place İstanbul, özel etkinlikleriniz için mükemmel bir mekandır. Düğünlerden iş toplantılarına, her türlü etkinliğiniz için profesyonel hizmetler sunuyoruz.</p>
+            <a href="/Home/Hizmetlerimiz" class="discover-more">Daha Fazlasını Keşfet</a>
+        </div>
+    </section>
+
+    <script>
+        let slideIndex = 0;
+        const slides = document.querySelectorAll(".header-slideshow img");
+
+        function showSlides() {
+            slides.forEach((slide, index) => {
+                slide.classList.remove("active");
+                if (index === slideIndex) {
+                    slide.classList.add("active");
+                }
+            });
+            slideIndex = (slideIndex + 1) % slides.length;
+            setTimeout(showSlides, 3000); // Slide değişim süresi 3 saniye
+        }
+
+
+
+        let galleryIndex = 0;
+        const galleryImages = document.querySelectorAll(".gallery .slide");
+        const gallerySlides = document.querySelector(".gallery .slides");
+
+        function plusSlides(n) {
+            galleryIndex += n;
+            if (galleryIndex < 0) {
+                galleryIndex = galleryImages.length - 1;
+            } else if (galleryIndex >= galleryImages.length) {
+                galleryIndex = 0;
+            }
+            gallerySlides.style.transform = `translateX(${-galleryIndex * 100}%)`;
+        }
+
+        showSlides(); // İlk kaydırıcıyı başlatma
+
+        document.querySelector(".prev").addEventListener("click", () => plusSlides(-1));
+        document.querySelector(".next").addEventListener("click", () => plusSlides(1));
+
+
+
+        </script>
+</body>
+</html>
+

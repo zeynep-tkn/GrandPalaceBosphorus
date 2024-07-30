@@ -1,0 +1,29 @@
+﻿<form method="post" action="/Reservation/Submit">
+    <div class="form-group">
+        <label for="name">Adınız</label>
+        <input type="text" id="name" name="name" required>
+    </div>
+    <div class="form-group">
+        <label for="email">E-posta</label>
+        <input type="email" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+        <label for="checkin">Giriş Tarihi</label>
+        <input type="date" id="checkin" name="checkin" required>
+    </div>
+    <div class="form-group">
+        <label for="checkout">Çıkış Tarihi</label>
+        <input type="date" id="checkout" name="checkout" required>
+    </div>
+    <div class="form-group">
+        <label for="room">Oda Tipi</label>
+        <select id="room" name="room" required>
+            <option value="standard">Standart Oda</option>
+            <option value="deluxe">Deluxe Oda</option>
+            <option value="suite">Süit Oda</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <button type="submit">Rezervasyon Yap</button>
+    </div>
+</form>

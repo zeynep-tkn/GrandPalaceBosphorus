@@ -1,0 +1,49 @@
+﻿@using GPB.Application.Dtos.GuestDto
+@using Microsoft.EntityFrameworkCore.Metadata.Internal
+@model IEnumerable<GetByIdGuestDto>;
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/site.css" /> <!-- CSS dosyanızı bağlayın -->
+</head>
+<body>
+    <div class="container">
+        <h1>@ViewData["Title"]</h1>
+
+        <p>
+            <a href="@Url.Action("Create")" class="btn btn-primary">Create New Guest</a>
+        </p>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>TC Number</th>
+                    <th>Username</th>
+                    <th>Email</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var guest in Model)
+                {
+                    <tr>
+                        <td>@guest.GuestId</td>
+                        <td>@guest.TcNumber</td>
+                        <td>@guest.Username</td>
+                        <td>@guest.Email</td>
+                        <td>
+                            <a href="@Url.Action("Edit", new { id = guest.GuestId })" class="btn btn-warning">Edit</a>
+                            <a href="@Url.Action("Delete", new { id = guest.GuestId })" class="btn btn-danger">Delete</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+    <script src="~/js/site.js"></script> <!-- JavaScript dosyanızı bağlayın -->
+</body>
+</html>

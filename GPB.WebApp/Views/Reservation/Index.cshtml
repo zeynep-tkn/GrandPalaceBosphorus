@@ -1,0 +1,50 @@
+﻿@using GPB.Application.Dtos.ReservationDtos
+@model IEnumerable<GetByIdReservationDto>;
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/site.css" /> <!-- CSS dosyanızı bağlayın -->
+</head>
+<body>
+    <div class="container">
+        <h1>@ViewData["Title"]</h1>
+
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Reservation ID</th>
+                    <th>Guest Name</th>
+                    <th>Room Type</th>
+                    <th>Check-in Date</th>
+                    <th>Check-out Date</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                    @foreach (var reservation in Model)
+                    {
+                        <tr>
+                            <td>@reservation.ReservationId</td>
+                            <td>@reservation.UserId</td>
+                            <td>@reservation.RoomType</td>
+                        <td>@reservation.CheckInDate.ToString("dd MMM yyyy")</td>
+                        <td>@reservation.CheckOutDate.ToString("dd MMM yyyy")</td>
+                            <td>
+                                <a href="@Url.Action("Edit", new { id = reservation.ReservationId })" class="btn btn-primary">Edit</a>
+                                <a href="@Url.Action("Delete", new { id = reservation.ReservationId })" class="btn btn-danger">Delete</a>
+                            </td>
+                        </tr>
+                    }
+                }
+            </tbody>
+        </table>
+
+        <a href="@Url.Action("Create")" class="btn btn-success">Create New Reservation</a>
+    </div>
+
+    <script src="~/js/site.js"></script> <!-- JavaScript dosyanızı bağlayın -->
+</body>
+</html>
+

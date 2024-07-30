@@ -1,0 +1,240 @@
+﻿@{
+    ViewData["Title"] = "Hizmet & Olanaklar";
+}
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<!-- Okyanus Otel Görsel Kısmı -->
+<div class="room-carousel1">
+    <div class="room-card-container1">
+        <div class="room-card1" id="card-1">
+            <img src="~/images/otel.jpg" alt="Otel Görseli">
+            <h3>Hizmet & Olanaklar</h3>
+            <h4>Okyanus Otel</h4>
+
+            <!-- İletişime Geçin Kartı -->
+            <div class="contact-card1">
+                <div class="contact-content1">
+                    <span>İletişime Geçin:</span>
+                    <a href="tel:+1234567890" class="contact-phone1">+123 456 7890</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Hizmet ve Olanaklar Kısmı -->
+<div class="service-header">
+    <h1>@ViewData["Title"]</h1>
+    <div class="service-list">
+        <div class="service-item" data-target="#content1">Otel Olanakları</div>
+        <div class="service-item" data-target="#content2">Hizmetlerimiz</div>
+        <div class="service-item" data-target="#content3">Fitness Eğitimi</div>
+        <div class="service-item" data-target="#content4">Gemi Turu Düzenlemesi</div>
+        <div class="service-item" data-target="#content5">Boğaz Kıyısında Düğün</div>
+        <div class="service-item" data-target="#content6">Şefin Özel Menüleri</div>
+    </div>
+</div>
+
+<!-- Otel Olanakları Başlığı -->
+<div id="content1" class="service-content">
+    <div class="facilities-section">
+        <h2 class="facilities-title">Otel Olanakları</h2>
+        <div class="offer-section">
+            <button class="nav-btn" id="prev-btn">&#10094;</button>
+            <button class="nav-btn" id="next-btn">&#10095;</button>
+            <div class="offer-container">
+
+                <div class="offer" id="offer2">
+                    <img src="/images/kapali-havuz.jpg" alt="Kapalı Havuz">
+                    <div class="info-box">
+                        <h2>Kapalı Havuz</h2>
+                        <p>Kapalı havuzumuzda sıcak bir atmosferde yüzmenin keyfini çıkarın! Rahat bir ortamda suyun tadını çıkarabilir, sakinleştirici bir deneyim yaşayabilirsiniz.</p>
+
+                    </div>
+                </div>
+
+                <div class="offer" id="offer1">
+                    <img src="/images/otel.jpg" alt="Açık Havuz">
+                    <div class="info-box">
+                        <h2>Açık Havuz</h2>
+                        <p> Yaz güneşinin tadını çıkarın! Geniş açık havuzumuzda serinleyebilir, rahat şezlonglarımızda dinlenebilir ve çevredeki doğal güzelliklerin keyfini çıkarabilirsiniz.</p>
+
+                    </div>
+                </div>
+
+                <div class="offer" id="offer3">
+                    <img src="/images/masaj.jpg" alt="Rahatlatıcı Spa ve Masaj Deneyimi">
+                    <div class="info-box">
+                        <h2>Rahatlatıcı Spa ve Masaj Deneyimi</h2>
+                        <p>Günün yorgunluğunu üzerinizden atmak için spa ve masaj hizmetlerimizi deneyin. Profesyonel masaj terapistlerimiz, sizi rahatlatacak çeşitli masaj seçenekleri sunar, huzur dolu bir ortamda kendinizi yenileme fırsatı verir.</p>
+
+                    </div>
+                </div>
+
+                <div class="offer" id="offer4">
+                    <img src="/images/yoga-ders.jpg" alt="Yoga Seanslarıyla Derin Rahatlama">
+                    <div class="info-box">
+                        <h2>Yoga Seanslarıyla Derin Rahatlama</h2>
+                        <p>Yoga derslerimizde, hem bedensel hem de ruhsal dengeyi bulabilirsiniz. Uygulayıcılarımıza özel olarak hazırlanan programlarla, esnekliğinizi artırabilir, derin nefes almayı öğrenebilir ve zihin boşaltıcı meditasyon tekniklerini keşfedebilirsiniz. Yoga seanslarımız, her seviyeden katılımcıya uygun şekilde düzenlenmiştir.</p>
+
+                    </div>
+                </div>
+                <!-- Diğer teklifler burada eklenebilir -->
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Hizmetlerimiz Bölümü -->
+<div id="content2" class="service-content">
+    <section class="our-services">
+        <h2 class="services-heading">Hizmetlerimiz</h2>
+        <div class="services-container">
+            <div class="service-column">
+                <div class="service-box">HELİKOPTER KİRALAMA HİZMETİ</div>
+                <div class="service-box">HAVAALANI ULAŞIMI</div>
+                <div class="service-box">ÇEVİRİ VE İŞ HİZMETLERİ</div>
+                <div class="service-box">ÇAMAŞIRHANE VE KURU TEMİZLEME</div>
+            </div>
+            <div class="service-column">
+                <div class="service-box">ÖZEL GEMİ TURU DÜZENLEMESİ</div>
+                <div class="service-box">VALE VE AYAKKABI BOYAMA HİZMETLERİ</div>
+                <div class="service-box">24 SAAT ODA SERVİSİ</div>
+                <div class="service-box">BEBEK BAKICILIĞI HİZMETLERİ</div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- Fitness Bölümü -->
+<div id="content3" class="service-content">
+    <section class="section fitness-section">
+        <div class="image-container fitness-image-container">
+            <img src="/images/fitness.jpg" alt="Fitness Görseli" class="img-fluid">
+            <div class="overlay fitness-overlay">
+                <h2 class="title fitness-title1">Fitness Eğitimi</h2>
+                <p class="description fitness-description">
+                    Otelimizde bulunan fitness merkezi, son teknoloji ekipmanlarla donatılmıştır ve konuklarımızın sağlık ve zindeliklerini korumaları için mükemmel bir ortam sunmaktadır. Profesyonel eğitmenler eşliğinde çeşitli egzersiz programlarına katılabilir, rahat ve geniş alanlarımızda spor yapmanın keyfini çıkarabilirsiniz.
+                </p>
+            </div>
+            <div class="header fitness-header">FİTNESS EĞİTİMİ</div>
+        </div>
+    </section>
+</div>
+
+<!-- Gemi Turu Bölümü -->
+<div id="content4" class="service-content">
+    <section class="section fitness-section">
+        <div class="image-container fitness-image-container">
+            <img src="/images/ozel-gemi.jpg" alt="Fitness Görseli" class="img-fluid">
+            <div class="overlay fitness-overlay">
+                <h2 class="title fitness-title1">Özel Gemi Turu</h2>
+                <p class="description fitness-description">
+                    Muhteşem deniz manzarası eşliğinde unutulmaz bir gemi turuna çıkın! Özel olarak tasarlanmış gemimizle denizde keyifli bir yolculuk yapabilir, çeşitli aktiviteler ve lezzetli yemeklerle dolu bir deneyim yaşayabilirsiniz. Detaylar ve rezervasyon için bizimle iletişime geçin!
+                </p>
+            </div>
+            <div class="header fitness-header">Özel Gemi Turu</div>
+        </div>
+    </section>
+</div>
+
+<!-- Boğaz Kıyısında Düğün Bölümü -->
+<div id="content5" class="service-content">
+    <section class="section fitness-section">
+        <div class="image-container fitness-image-container">
+            <img src="/images/deniz-dugun.jpg" alt="Fitness Görseli" class="img-fluid">
+            <div class="overlay fitness-overlay">
+                <h2 class="title fitness-title1">Boğaz Kıyısında Düğün</h2>
+                <p class="description fitness-description">
+                    Boğaz kıyısında gerçekleşen düğünlerimiz, size ve sevdiklerinize unutulmaz anlar yaşatacak. Denizle buluşan bu muazzam manzara eşliğinde, romantik bir atmosferde hayatınızın en özel gününü kutlayabilirsiniz. Şık bir organizasyon, profesyonel servis ve göz kamaştırıcı bir boğaz manzarasıyla, hayalinizdeki düğün burada gerçeğe dönüşüyor.
+                </p>
+            </div>
+            <div class="header fitness-header">Boğaz Kıyısında Düğün</div>
+        </div>
+    </section>
+</div>
+
+
+<!-- Şefin Özel Menüleri Bölümü -->
+<div id="content6" class="service-content">
+    <section class="section fitness-section">
+        <div class="image-container fitness-image-container">
+            <img src="/images/sef-yemek.jpg" alt="Fitness Görseli" class="img-fluid">
+            <div class="overlay fitness-overlay">
+                <h2 class="title fitness-title1">Şefin Özel Menüleri</h2>
+                <p class="description fitness-description">
+                    Şefimizin özenle hazırladığı özel menüler, hem gözünüzü hem de damağınızı şenlendirecek. Yılın en taze ürünlerinden seçilen malzemelerle hazırlanan bu menüler, her yemeğe özel bir dokunuş katar. Farklı tatları bir arada sunan menülerimizle özel anlarınızı daha da unutulmaz kılabilirsiniz.
+                </p>
+            </div>
+            <div class="header fitness-header">Şefin Özel Menüleri</div>
+        </div>
+    </section>
+</div>
+
+<!-- Özlü Söz ve Görseller -->
+<div class="quote-container">
+    <img src="~/images/isaret2.jpg" alt="Özlü Söz Üst Görseli" class="quote-img-top">
+    <p class="quote">Her gün her misafirimiz için kalıcı anılar yaratmak için işe geliyoruz ve onlar gülümseyerek ayrıldıklarında mutlu oluyoruz</p>
+    <img src="~/images/isaret1.jpg" alt="Özlü Söz Alt Görseli" class="quote-img-bottom">
+</div>
+
+
+
+<!-- JavaScript kodunu buraya ekleyin -->
+<script>
+    window.addEventListener('scroll', () => {
+        // Ortak Kaydırma Etkisi için Bölümler
+        const sections = document.querySelectorAll('.fitness-image-container');
+        sections.forEach(section => {
+            const rect = section.getBoundingClientRect();
+            const isInViewport = rect.top < window.innerHeight && rect.bottom > 0;
+
+            if (isInViewport) {
+                section.classList.add('scroll-effect');
+            } else {
+                section.classList.remove('scroll-effect');
+            }
+        });
+    });
+
+    // Hizmet ve Olanaklar için Kaydırma İşlemi
+    document.querySelectorAll('.service-item').forEach(item => {
+        item.addEventListener('click', () => {
+            const targetId = item.getAttribute('data-target');
+            const targetElement = document.querySelector(targetId);
+
+            if (targetElement) {
+                targetElement.scrollIntoView({
+                    behavior: 'smooth', // Kaydırma efekti
+                    block: 'start' // Hedefin başlangıçta görünmesini sağlar
+                });
+            }
+        });
+    });
+
+    // Offer Slider için JavaScript kodu
+    const offerContainer = document.querySelector('.offer-container');
+    const prevBtn = document.getElementById('prev-btn');
+    const nextBtn = document.getElementById('next-btn');
+    let currentIndex = 0;
+    const offers = document.querySelectorAll('.offer');
+    const totalOffers = offers.length;
+
+    function updateOffer() {
+        offerContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
+    }
+
+    prevBtn.addEventListener('click', () => {
+        currentIndex = (currentIndex > 0) ? currentIndex - 1 : totalOffers - 1;
+        updateOffer();
+    });
+
+    nextBtn.addEventListener('click', () => {
+        currentIndex = (currentIndex < totalOffers - 1) ? currentIndex + 1 : 0;
+        updateOffer();
+    });
+
+
+</script>
+

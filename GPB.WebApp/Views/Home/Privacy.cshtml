@@ -1,0 +1,255 @@
+﻿@{
+    ViewData["Title"] = "Gizlilik Politikası";
+}
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            overflow-x: hidden; /* Yalnızca yatay taşmayı engeller */
+        }
+
+        /*Giriş görseli kısmı*/
+        .room-carousel {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100vh; /* Görselin tam ekran yüksekliğinde olması için */
+            position: relative;
+            overflow: hidden;
+        }
+
+        .room-card-container {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            transition: transform 0.5s ease;
+        }
+
+        .room-card {
+            min-width: 100%;
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+
+            .room-card img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover; /* Görselin kutuyu kaplamasını sağlar */
+                transition: transform 0.3s ease; /* Hover efekti için geçiş süresi */
+            }
+
+            .room-card:hover img {
+                transform: scale(1.1); /* Hover sırasında %10 büyütme */
+                filter: brightness(80%); /* Hover sırasında görseli karartma */
+            }
+
+            .room-card h3 {
+                position: absolute;
+                top: 45%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: black;
+                font-size: 55px;
+                /*  background: rgba(0, 0, 0, 0.1); Yarı saydam siyah arka plan */
+                padding: 10px 20px;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                font-weight: bold;
+                border-radius: 5px;
+            }
+
+            .room-card h4 {
+                position: absolute;
+                top: 5%; /* Başlıktan sonra başlayacak şekilde */
+                left: 5%;
+                transform: translate(-50%, -50%);
+                color: white;
+                font-size: 20px; /* Metin boyutu */
+                background: rgba(0, 0, 0, 0); /* Yarı saydam siyah arka plan */
+                padding: 0;
+                border-radius: 5px;
+                max-width: 80%;
+                text-align: center;
+                line-height: 1.5; /* Satır yüksekliği */
+            }
+
+
+
+            .room-card p {
+                position: absolute;
+                top: 60%; /* Başlıktan sonra başlayacak şekilde */
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: black;
+                font-size: 18px; /* Metin boyutu */
+                background: rgba(0, 0, 0, 0.1); /* Yarı saydam siyah arka plan */
+                padding: 10px 20px;
+                border-radius: 5px;
+                max-width: 80%;
+                text-align: center;
+                line-height: 1.5; /* Satır yüksekliği */
+            }
+
+
+
+        /* Gizlilik politika kısmı */
+
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: black;
+            box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+            box-sizing: border-box; /* Padding ve border'ları genişlikten düşür */
+        }
+
+        h1, h2 {
+            color: white;
+        }
+
+        p {
+            color: white;
+        }
+
+        h1 {
+            border-bottom: 2px solid white;
+            padding-bottom: 10px;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            color: white;
+        }
+
+        strong {
+            color: white;
+        }
+
+        aside {
+            width: 30%;
+            padding-left: 15px;
+            margin: 0;
+            font-style: italic;
+            background-color: lightgray;
+            float: left; /* Sol tarafa yaslamak için */
+            box-sizing: border-box; /* Padding ve border'ları genişlikten düşür */
+        }
+
+        .content {
+            margin-left: 35%; /* Aside genişliği + boşluk */
+        }
+
+            .content img {
+                max-width: 100%;
+                height: auto;
+            }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .content {
+            margin-left: 0; /* Küçük ekranlarda aside kaldırılır */
+            padding: 0 10px; /* Kenar boşlukları eklenir */
+        }
+
+        aside {
+            width: 100%; /* Küçük ekranlarda aside genişliği */
+            float: none; /* Sol tarafa yaslamayı kaldır */
+            margin-bottom: 20px; /* Alt boşluk ekle */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Giriş ekranı kısmı görsel ve başlık -->
+    <div class="room-carousel">
+        <div class="room-card-container">
+            <div class="room-card" id="card-1">
+                <img src="~/images/gizlilik.jpg" alt="Restoran Görseli">
+                <h3>Gizlilik Politikası</h3>
+                <h4>Okyanus Otel</h4>
+                <p>Gizliliğiniz bizim için önemlidir. Bu gizlilik politikası, kişisel bilgilerinizin nasıl toplandığını, kullanıldığını ve korunduğunu açıklar.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="content">
+        <article>
+            <div class="container">
+                <h1>@ViewData["Title"]</h1>
+                <p><strong>Son Güncelleme Tarihi: 09.07.2024</strong></p>
+
+                <h2>1. Giriş</h2>
+                <p>Biz, [Otel Adı], gizliliğinizi korumayı taahhüt ediyoruz. Bu Gizlilik Politikası, web sitemizi ([Web Sitesi Adresi]) ziyaret ettiğinizde ve hizmetlerimizi kullandığınızda kişisel verilerinizi nasıl topladığımızı, kullandığımızı ve koruduğumuzu açıklamaktadır.</p>
+
+                <h2>2. Topladığımız Bilgiler</h2>
+                <p>Web sitemizi kullanırken sizden aşağıdaki türde bilgiler toplayabiliriz:</p>
+                <ul>
+                    <li><strong>Kişisel Bilgiler:</strong> Adınız, e-posta adresiniz, telefon numaranız, adresiniz, ödeme bilgileri.</li>
+                    <li><strong>Rezervasyon Bilgileri:</strong> Rezervasyon tarihleri, oda tercihleri, özel istekler.</li>
+                    <li><strong>Kullanım Bilgileri:</strong> Web sitemizi nasıl kullandığınıza dair bilgiler (IP adresi, tarayıcı türü, erişim saatleri).</li>
+                </ul>
+
+                <h2>3. Bilgilerin Kullanımı</h2>
+                <p>Topladığımız bilgileri şu amaçlarla kullanabiliriz:</p>
+                <ul>
+                    <li>Rezervasyon işlemlerini gerçekleştirmek ve yönetmek.</li>
+                    <li>Size daha iyi hizmet sunmak ve müşteri desteği sağlamak.</li>
+                    <li>Hizmetlerimizi ve web sitemizi iyileştirmek.</li>
+                    <li>Yasal yükümlülüklerimizi yerine getirmek.</li>
+                </ul>
+
+                <h2>4. Bilgilerin Paylaşımı</h2>
+                <p>Kişisel bilgilerinizi üçüncü şahıslarla yalnızca aşağıdaki durumlarda paylaşırız:</p>
+                <ul>
+                    <li>Hizmet sağlayıcılarımız ve iş ortaklarımızla (ödeme işlemcileri, otel yönetimi yazılımı sağlayıcıları gibi).</li>
+                    <li>Yasal zorunluluklar çerçevesinde (mahkeme celbi, yasal talepler).</li>
+                    <li>Şirket birleşmeleri veya devralmalar gibi iş süreçlerinde.</li>
+                </ul>
+
+                <h2>5. Güvenlik</h2>
+                <p>Kişisel bilgilerinizi korumak için uygun güvenlik önlemleri alıyoruz. Ancak, internet üzerinden veri iletiminin tamamen güvenli olmadığını ve bilgilerinizin gizliliğini garanti edemeyeceğimizi unutmayın.</p>
+
+                <h2>6. Çerezler ve İzleme Teknolojileri</h2>
+                <p>Web sitemizde çerezler ve benzeri izleme teknolojileri kullanıyoruz. Çerezler, web sitemizi daha etkin ve kişisel hale getirmek için tarayıcınıza yerleştirilen küçük veri dosyalarıdır. Çerez kullanımını tarayıcı ayarlarınızdan yönetebilirsiniz.</p>
+
+                <h2>7. Haklarınız</h2>
+                <p>Kişisel verilerinizle ilgili olarak aşağıdaki haklara sahipsiniz:</p>
+                <ul>
+                    <li>Erişim ve bilgi talep etme.</li>
+                    <li>Düzeltme ve güncelleme talep etme.</li>
+                    <li>Silme ve unutulma talep etme.</li>
+                    <li>Veri taşınabilirliği talep etme.</li>
+                </ul>
+
+                <h2>8. İletişim</h2>
+                <p>Gizlilik politikamız hakkında sorularınız veya endişeleriniz varsa, bizimle aşağıdaki bilgiler aracılığıyla iletişime geçebilirsiniz:</p>
+                <p>
+                    <strong>Okyanus Otel</strong><br>
+                    E-posta: [E-posta Adresi]<br>
+                    Telefon: [Telefon Numarası]<br>
+                    Adres: [Adres]
+                </p>
+
+                <h2>9. Politika Değişiklikleri</h2>
+                <p>Bu Gizlilik Politikası zaman zaman güncellenebilir. Herhangi bir değişiklik yaptığımızda, web sitemizde güncellenmiş politikayı yayınlayacağız ve gerekiyorsa sizi bilgilendireceğiz.</p>
+            </div>
+        </article>
+    </section>
+</body>
+</html>
+

@@ -1,0 +1,346 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terrace Room</title>
+    <style>
+        /* Temel sayfa stilleri */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Başlık konteyneri stilleri */
+        .header-container {
+            position: relative;
+            width: 100%;
+            height: 700px;
+            overflow: hidden;
+        }
+
+            .header-container img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: transform 0.6s ease;
+                z-index: 0;
+            }
+
+                .header-container img:hover {
+                    transform: scale(1.2);
+                }
+
+        .header-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            color: white;
+            z-index: 1;
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+        }
+
+        .hotel-logo {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin-bottom: 0.5em;
+            z-index: 2;
+        }
+
+            .hotel-logo i {
+                font-size: 1.5em;
+                margin-right: 0.5em;
+            }
+
+        .hotel-name {
+            font-size: 1.5em;
+            font-weight: bold;
+            font-style: italic;
+            margin: 0;
+        }
+
+        .general-overview {
+            text-align: center;
+            align-items: center;
+            font-family: Fantasy;
+            letter-spacing: 9px;
+            font-size: 70px;
+            font-weight: bold;
+            color: white;
+        }
+
+        /* Detaylar Stilleri */
+        .details-header {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 20px;
+            color: white;
+            letter-spacing: 5px;
+        }
+
+        .card-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+
+        .card {
+            position: relative;
+            width: 30%;
+            margin: 10px 0;
+            overflow: hidden;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+            .card img {
+                width: 100%;
+                height: auto;
+                display: block;
+            }
+
+        .card-title {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 10px;
+            font-size: 18px;
+            text-align: center;
+        }
+
+        .card-content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 20px;
+            box-sizing: border-box;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .card:hover .card-content {
+            opacity: 1;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .feature-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+            .feature-list li {
+                margin-bottom: 10px;
+            }
+
+        /* Kolaylıklar Stilleri */
+        .amenities-header {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 20px;
+            color: white;
+            letter-spacing: 5px;
+        }
+
+        .amenities-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+
+        .amenities-card {
+            position: relative;
+            width: 45%;
+            margin: 10px 0;
+            overflow: hidden;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+            background-color: black;
+            padding: 20px;
+            color: white;
+            box-sizing: border-box;
+        }
+
+            .amenities-card:hover {
+                transform: scale(1.05);
+            }
+
+        .amenities-title {
+            font-size: 18px;
+            margin-bottom: 10px;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        /*Rezervasoyon Yap Butonu Stilleri */
+        .reservation-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: black;
+            color: white;
+            text-decoration: none;
+            text-transform: uppercase;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            font-size: 25px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+            .reservation-button:hover {
+                background-color: white;
+                color: black;
+            }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Header konteyneri -->
+        <div class="header-container">
+            <!-- Header görseli -->
+            <img src="~/images/gorsel3.jpg">
+            <!-- Header overlay -->
+            <div class="header-overlay">
+                <!-- Otel logo ve adı -->
+                <div class="hotel-logo">
+                    <i class="fas fa-hotel"></i>
+                    <h1 class="hotel-name">Ünal İstanbul <br /> Bosphorus</h1>
+                </div>
+                <!-- Genel bakış başlığı -->
+                <div class="general-overview">Terrace Room</div>
+                <button class="reservation-button">Rezervasyon Yap</button>
+            </div>
+        </div>
+    </header>
+    <!-- Detaylar başlığı -->
+    <h1 class="details-header">DETAYLAR</h1>
+
+    <!-- Kart konteyneri -->
+    <div class="card-container">
+        <!-- Kart 1 -->
+        <div class="card">
+            <img src="https://via.placeholder.com/300x200" alt="Yataklar">
+            <div class="card-title">Yataklar</div>
+            <div class="card-content">
+                <ul class="feature-list">
+                    <li>Çift kişilik yatak veya king-size yatak</li>
+                    <li>Ek yatak seçeneği</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Kart 2 -->
+        <div class="card">
+            <img src="https://via.placeholder.com/300x200" alt="Doluluk ve Kapasite">
+            <div class="card-title">Doluluk ve Kapasite</div>
+            <div class="card-content">
+                <ul class="feature-list">
+                    <li>Maksimum 2 yetişkin</li>
+                    <li>Bebek veya küçük çocuk için ücretsiz konaklama imkanı</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Kart 3 -->
+        <div class="card">
+            <img src="https://via.placeholder.com/300x200" alt="Oda Boyutu ve Alan">
+            <div class="card-title">Oda Boyutu ve Alan</div>
+            <div class="card-content">
+                <ul class="feature-list">
+                    <li>Geniş yaşam alanı</li>
+                    <li>Oturma alanı veya çalışma masası</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Kart 4 -->
+        <div class="card">
+            <img src="https://via.placeholder.com/300x200" alt="Banyo Özellikleri">
+            <div class="card-title">Banyo Özellikleri</div>
+            <div class="card-content">
+                <ul class="feature-list">
+                    <li>Duş ve/veya küvet seçenekleri</li>
+                    <li>Lüks banyo malzemeleri</li>
+                    <li>Saç kurutma makinesi</li>
+                    <li>Havlu ve bornozlar</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Kart 5 -->
+        <div class="card">
+            <img src="https://via.placeholder.com/300x200" alt="Manzara ve Görüntüleme">
+            <div class="card-title">Manzara ve Görüntüleme</div>
+            <div class="card-content">
+                <ul class="feature-list">
+                    <li>Şehir manzarası</li>
+                    <li>Pencere kenarında oturma alanı</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Kart 6 -->
+        <div class="card">
+            <img src="https://via.placeholder.com/300x200" alt="Teknolojik Donanımlar">
+            <div class="card-title">Teknolojik Donanımlar</div>
+            <div class="card-content">
+                <ul class="feature-list">
+                    <li>Yüksek hızlı internet bağlantısı</li>
+                    <li>LCD TV</li>
+                    <li>Kablosuz telefon</li>
+                    <li>Elektrik prizleri ve USB portları</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Kolaylıklar başlığı -->
+    <h1 class="amenities-header">KOLAYLIKLAR</h1>
+
+    <!-- Kolaylıklar konteyneri -->
+    <div class="amenities-container">
+        <!-- Teknolojik Donanımlar Kartı -->
+        <div class="amenities-card">
+            <div class="amenities-title">Teknolojik Donanımlar</div>
+            <p>Yüksek hızlı internet, LCD TV, USB şarj portları, telefon, ve diğer teknolojik donanımlarla modern yaşamın konforunu yaşayın.</p>
+        </div>
+        <!-- Konfor ve İmkanlar Kartı -->
+        <div class="amenities-card">
+            <div class="amenities-title">Konfor ve İmkanlar</div>
+            <p>Konforlu yataklar, oturma alanları, klima, minibar ve odanızda ihtiyaç duyabileceğiniz tüm imkanlar.</p>
+        </div>
+        <!-- Ekstralar Kartı -->
+        <div class="amenities-card">
+            <div class="amenities-title">Ekstralar</div>
+            <p>24 saat oda servisi, çamaşırhane hizmeti, kuru temizleme, otopark ve vale hizmetleri gibi ekstralar.</p>
+        </div>
+        <!-- Güvenlik ve Hizmetler Kartı -->
+        <div class="amenities-card">
+            <div class="amenities-title">Güvenlik ve Hizmetler</div>
+            <p>7/24 güvenlik, resepsiyon hizmetleri, bagaj muhafazası ve misafir ihtiyaçlarına özel hizmetler.</p>
+        </div>
+    </div>
+</body>
+</html>

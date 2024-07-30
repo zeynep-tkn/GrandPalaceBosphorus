@@ -1,0 +1,166 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Grand Palace Bosphorus</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/OtelRezervasyonSitesi.styles.css" asp-append-version="true" />
+    <style>
+        /* Navbar Styles */
+        .navbar-custom {
+            background-color: black;
+        }
+
+        .navbar-custom {
+            border-bottom: none; /* Alt çizgiyi kaldırmak için */
+        }
+
+        .navbar-dark .navbar-nav .nav-link {
+            color: white;
+        }
+
+            .navbar-dark .navbar-nav .nav-link:hover {
+                color: lightgray;
+            }
+
+        .navbar-dark .navbar-brand {
+            color: black;
+        }
+
+
+
+        .navbar-brand img {
+            width: 100px;
+        }
+
+        .navbar-nav .nav-item {
+            margin-right: 35px; /* Adjust the margin as needed */
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 20px;
+        }
+
+        .user-icon {
+            font-size: 24px; /* Adjust the size as needed */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-dark navbar-custom navbar-toggleable-sm mb-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+                    <img src="~/images/logo.jpeg" alt="Okyanus Otel Logo">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <a href="/Home/HotelOverview" class="nav-item nav-link active">Otel Genel Bakış</a>
+                        @*  <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-controller="Home" asp-action="OtelGenelBakis">Otel Genel Bakış</a>
+                        </li>*@
+
+                        <a href="/Home/Room" class="nav-item nav-link active">Konaklama</a>
+                        @* <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Room" asp-action="Index">Konaklama</a>
+                        </li> *@
+                        <a href="/Home/Restaurant" class="nav-item nav-link active">Restoran</a>
+                        @* <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Restoran">Restoran</a>
+                        </li>*@
+                        <a href="/Home/Offers" class="nav-item nav-link active">Teklifler</a>
+                        @*<li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Teklifler">Teklifler</a>
+                        </li>*@
+                        <a href="/Home/Services" class="nav-item nav-link active">Hizmetlerimiz</a>
+                        @* <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Hizmetlerimiz">Hizmetlerimiz</a>
+                        </li>*@
+                    </ul>
+                    <ul class="navbar-nav">
+                        <a href="/Account/Register" class="nav-item nav-link active">Register</a>
+                        <i class="fa fa-user user-icon" aria-hidden="true"></i>
+                        @*
+                       <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-controller="Account" asp-action="Register">
+                        <i class="fa fa-user user-icon" aria-hidden="true"></i>
+                        </a>
+                        </li>*@
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container-fluid">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="~/images/otel logo.jpg" alt="Otel Görseli">
+                <p>Antalya’nın gözde plajlarından Lara’da yer alan Okyanus Beach Hotel, geniş plaj alanı ve yüzme havuzları ile tatilin tadını çıkarmanız için ideal bir mekan sunuyor..</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-rss"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                    <a href="#"><i class="fa fa-pinterest"></i></a>
+                </div>
+            </div>
+            <div class="footer-contact">
+                <h3>İLETİŞİM-ADRES</h3>
+                <p>
+                    Okyanus Beach Hotel, Lara Mahallesi, <br>
+                    1234. Sokak No:78, 07230 Antalya, Türkiye
+                </p>
+                <p>
+                    <a href="mailto:mycompany@gmail.com">mycompany@gmail.com</a><br>
+                    <a href="mailto:support@mycompany.com">support@mycompany.com</a>
+                </p>
+                <p>+1234567890<br>+1234567890</p>
+            </div>
+            <div class="footer-links">
+                <h3>LİNKLER</h3>
+                <ul>
+                    <li><a href="#">Ana Sayfa</a></li>
+                    <li><a href="#">Otel Genel Bakış</a></li>
+                    <li><a href="#">Konaklama</a></li>
+                    <li><a href="#">Restoran</a></li>
+                    <li><a href="#">Teklifler</a></li>
+                    <li><a href="#">Hizmetler</a></li>
+                </ul>
+            </div>
+            <div class="footer-collections">
+                <h3>FOTOĞRAFLAR</h3>
+                <div class="collection-images">
+                    <img src="/images/etkinlikler.jpg" alt="Collection 1">
+                    <img src="/images/otel.jpg" alt="Collection 2">
+                    <img src="/images/otel-bilgi.jpg" alt="Collection 3">
+                    <img src="/images/otellobi.jpeg" alt="Collection 4">
+                    <img src="/images/restoran.jpg" alt="Collection 5">
+                    <img src="/images/deniz-dugun.jpg" alt="Collection 6">
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>
+                Telif Hakkı © 2024 Şirketim. Tüm Hakları Saklıdır
+                | <a href="@Url.Action("Privacy", "Home")">Gizlilik</a>
+            </p>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

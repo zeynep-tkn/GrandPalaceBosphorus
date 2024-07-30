@@ -1,0 +1,620 @@
+﻿@{
+    ViewData["Title"] = "Restoranlar";
+}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restoranlar & Barlar</title>
+    <style>
+
+        * {
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden; /* Yalnızca yatay taşmayı engeller */
+            background-color: black;
+        }
+
+
+
+
+
+
+
+        .room-carousel {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100vh; /* Görselin tam ekran yüksekliğinde olması için */
+            position: relative;
+            overflow: hidden;
+        }
+
+        .room-card-container {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            transition: transform 0.5s ease;
+        }
+
+        .room-card {
+            min-width: 100%;
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+
+            .room-card img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover; /* Görselin kutuyu kaplamasını sağlar */
+                transition: transform 0.3s ease; /* Hover efekti için geçiş süresi */
+            }
+
+            .room-card:hover img {
+                transform: scale(1.1); /* Hover sırasında %10 büyütme */
+                filter: brightness(80%); /* Hover sırasında görseli karartma */
+            }
+
+            .room-card h3 {
+                position: absolute;
+                top: 35%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: white;
+                font-size: 55px;
+                background: rgba(0, 0, 0, 0.2); /* Yarı saydam siyah arka plan */
+                padding: 10px 20px;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                font-weight: bold;
+                border-radius: 5px;
+            }
+
+            .room-card h4 {
+                position: absolute;
+                top: 5%; /* Başlıktan sonra başlayacak şekilde */
+                left: 5%;
+                transform: translate(-50%, -50%);
+                color: white;
+                font-size: 20px; /* Metin boyutu */
+                background: rgba(0, 0, 0, 0); /* Yarı saydam siyah arka plan */
+                padding: 0;
+                border-radius: 5px;
+                max-width: 80%;
+                text-align: center;
+                line-height: 1.5; /* Satır yüksekliği */
+            }
+
+
+            .room-card p {
+                position: absolute;
+                top: 50%; /* Başlıktan sonra başlayacak şekilde */
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: white;
+                font-size: 18px; /* Metin boyutu */
+                background: rgba(0, 0, 0, 0.5); /* Yarı saydam siyah arka plan */
+                padding: 10px 20px;
+                border-radius: 5px;
+                max-width: 80%;
+                text-align: center;
+                line-height: 1.5; /* Satır yüksekliği */
+            }
+
+
+        /* İletişime Geçin Kartı */
+        .contact-card {
+            position: absolute;
+            top: 77%; /* Görselin üst kısmından %70 aşağıda konumlandırılır */
+            left: 0; /* Sol kenardan sıfır mesafede konumlandırılır */
+            width: 100%; /* Kartın genişliğini tam sayfa genişliği yapar */
+            background: rgba(0, 0, 0, 0.6); /* Yarı saydam siyah arka plan */
+            color: white; /* Yazı rengi */
+            padding: 10px 30px; /* İç boşluk */
+            border-radius: 10px; /* Köşeleri yuvarlatır */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Gölge efekti */
+            text-align: center; /* İçerikleri ortala */
+            box-sizing: border-box; /* Padding ve border'ı genişliğe dahil eder */
+            display: flex; /* Flexbox düzeni */
+            flex-direction: column; /* Yüksekliği dikey hizalar */
+            align-items: center; /* Yatayda ortalar */
+        }
+
+
+        .contact-content {
+            text-align: center;
+            display: flex;
+            flex-direction: row; /* Yan yana yerleştirme */
+            align-items: center; /* Dikeyde ortalama */
+            gap: 10px; /* Başlık ve numara arasına boşluk ekler */
+            margin-bottom: 10px; /* Başlık ve numara arasına boşluk ekler */
+        }
+
+            .contact-content span {
+                display: block;
+                font-size: 18px;
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+
+        .contact-phone {
+            color: #f4a261; /* Telefon numarasının rengi */
+            text-decoration: none;
+            margin-bottom: 10px;
+            font-size: 22px;
+        }
+
+            .contact-phone:hover {
+                color: #f76c6c; /* Hover efekti rengi */
+            }
+
+
+
+
+
+
+
+
+
+
+
+        /* Restoranlar & Barlar Başlığı */
+        .restaurant-section {
+            text-align: center;
+            margin-top: 40px;
+            padding: 40px 0;
+            /* Arka plan rengi */
+        }
+
+            .restaurant-section h2 {
+                font-size: 36px;
+                color: white;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                margin: 0;
+            }
+
+        /* Restoran Kartları */
+        .gallery {
+            background-color: black;
+            width: 96vw;
+            margin: 0 auto;
+            margin-top: 40px;
+        }
+
+        .gallery-cell {
+            width: 800px;
+            height: 600px;
+            margin-right: 10px;
+            background-color: white;
+            border-radius: 30px;
+            overflow: hidden;
+            position: relative;
+        }
+
+            .gallery-cell img {
+                width: 100%;
+                height: 60%;
+                object-fit: cover;
+            }
+
+            .gallery-cell h4 {
+                margin: 20px 40px;
+                font-size: 1.2em;
+                font-size: 38px;
+                font-family: 'MV Boli';
+                text-align: left;
+            }
+
+            .gallery-cell .info-container {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 40px;
+                color: black; /* Beyaz yazı rengi */
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+            }
+
+                .gallery-cell .info-container .info-left {
+                    flex: 1;
+                    padding-right: 10px;
+                    text-align: left;
+                    margin-bottom: 23px;
+                }
+
+                .gallery-cell .info-container .info-right {
+                    flex: 1;
+                    border-left: 1px solid black; /* Düz çizgi */
+                    text-align: left;
+                    height: 120px;
+                    margin: auto;
+                }
+
+                    .gallery-cell .info-container .info-right p {
+                        margin: 5px 30px;
+                        font-size: 0.9em;
+                        margin-top: -1px;
+                    }
+
+                    .gallery-cell .info-container .info-right .section-title {
+                        font-weight: bold;
+                        margin-bottom: 5px;
+                    }
+
+            .gallery-cell button:hover {
+                background-color: red;
+            }
+
+        /* Flickity arrow styles */
+        .flickity-prev-next-button {
+            width: 44px;
+            height: 44px;
+            background: #333;
+            opacity: 0.75;
+        }
+
+            .flickity-prev-next-button:hover {
+                background: #555;
+            }
+
+            .flickity-prev-next-button .flickity-button-icon {
+                fill: white;
+            }
+    </style>
+</head>
+
+<body>
+    <!-- Giriş ekranı kısmı görsel ve başlık -->
+    <div class="room-carousel">
+        <div class="room-card-container">
+            <div class="room-card" id="card-1">
+                <img src="~/images/rooftop.jpg" alt="Restoran Görseli">
+                <h3>Restoran & Barlar</h3>
+                <p>Şeflerimizin hazırladığı leziz yemekler ve şık atmosferimizle tatilinizin tadını çıkarın. Geniş menü seçeneklerimizle her damak zevkine hitap eden restoranlarımız, unutulmaz bir yemek deneyimi sunar.</p>
+                <h4>Okyanus Otel</h4>
+
+                <!-- İletişime Geçin Kartı -->
+                <div class="contact-card">
+                    <div class="contact-content">
+                        <span>İletişime Geçin:</span>
+                        <a href="tel:+1234567890" class="contact-phone">+123 456 7890</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Restoranlar Başlığı -->
+    <div class="restaurant-section">
+        <h2>RESTORANLAR</h2>
+    </div>
+
+
+    <!-- Restoran Kartları-->
+    <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+        <div class="gallery-cell">
+            <img src="~/images/sushi.jpg" alt="Restoran 1">
+            <h4>Zen Sushi Bar</h4>
+            <div class="info-container">
+                <div class="info-left">
+                    Zen Sushi Bar, Japon mutfağının en lezzetli sushi ve sashimi seçeneklerini sunar. Sakin atmosferi ve özenli sunumlarıyla Japon kültürünün tadını çıkarabilirsiniz.
+                </div>
+                <div class="info-right">
+                    <p class="section-title">Tarz:</p>
+                    <p>Akşam Yemeği</p>
+                    <p class="section-title">Mutfak Türü:</p>
+                    <p>Japon, Sushi</p>
+                    <p class="section-title">Kıyafet Zorunluluğu:</p>
+                    <p>Şık Kıyafet</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="gallery-cell">
+            <img src="~/images/denizurun.jpg" alt="Restoran 2">
+            <h4>Deniz Ürünleri Restoranı</h4>
+            <div class="info-container">
+                <div class="info-left">
+                    Taze deniz ürünleri ve muhteşem bir deniz manzarası eşliğinde yemek deneyimi sizi bekliyor. Aqua Bistro’da, denizden sofranıza en taze deniz ürünlerini sunarak unutulmaz bir akşam yemeği yaşamanızı sağlıyoruz.
+                </div>
+                <div class="info-right">
+                    <p class="section-title">Tarz:</p>
+                    <p>Tüm gün yemek</p>
+                    <p class="section-title">Mutfak Türü:</p>
+                    <p>Yerel, Uluslararası</p>
+                    <p class="section-title">Kıyafet Zorunluluğu:</p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery-cell">
+            <img src="~/images/seflerinmutfak.jpg" alt="Restoran 3">
+            <h4>Seflerin Mutfak</h4>
+            <div class="info-container">
+                <div class="info-left">
+                    Seflerimizin özel tarifleri ile hazırlanan yemeklerimizi şık bir ortamda deneyimleyebilirsiniz
+                </div>
+                <div class="info-right">
+                    <p class="section-title">Tarz:</p>
+                    <p>Tüm gün yemek</p>
+                    <p class="section-title">Mutfak Türü:</p>
+                    <p>Yerel, Uluslararası</p>
+                    <p class="section-title">Kıyafet Zorunluluğu:</p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery-cell">
+            <img src="~/images/gurme.jpg" alt="Restoran 4">
+            <h4>Gurme Restoran</h4>
+            <div class="info-container">
+                <div class="info-left">
+                    Gurme mutfak deneyimi sunan restoranımızda, şeflerimizin özel tarifleri ile hazırlanan yemekleri tadabilirsiniz.
+                </div>
+                <div class="info-right">
+                    <p class="section-title">Tarz:</p>
+                    <p>Tüm gün yemek</p>
+                    <p class="section-title">Mutfak Türü:</p>
+                    <p>Yerel, Uluslararası</p>
+                    <p class="section-title">Kıyafet Zorunluluğu:</p>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="gallery-cell">
+            <img src="~/images/legourmet.jpg" alt="Restoran 5">
+            <h4>Le Gourmet</h4>
+            <div class="info-container">
+                <div class="info-left">
+                    Le Gourmet, Fransız mutfağından seçkin yemekler sunar. Klasik Fransız tarifleri ve zarif sunumlarıyla romantik bir akşam yemeği için mükemmel bir seçim
+                </div>
+                <div class="info-right">
+                    <p class="section-title">Tarz:</p>
+                    <p>Romantik Akşam Yemeği</p>
+                    <p class="section-title">Mutfak Türü:</p>
+                    <p>Fransız</p>
+                    <p class="section-title">Kıyafet Zorunluluğu:</p>
+                    <p>Şık Kıyafet</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="gallery-cell">
+            <img src="~/images/tropikal.jpg" alt="Restoran 6">
+            <h4>Tropikal Lezzetler</h4>
+            <div class="info-container">
+                <div class="info-left">
+                    Tropikal Lezzetler, egzotik meyveler ve tropikal tatlarla hazırlanan çeşitli yemekleri sunar. Tropikal bir atmosferde farklı tatları keşfetmek isteyenler için ideal bir mekan.
+                </div>
+                <div class="info-right">
+                    <p class="section-title">Tarz:</p>
+                    <p>Öğle Yemeği</p>
+                    <p class="section-title">Mutfak Türü:</p>
+                    <p>Tropikal, Uluslararası</p>
+                    <p class="section-title">Kıyafet Zorunluluğu:</p>
+                    <p>Rahat Kıyafet</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="gallery-cell">
+            <img src="~/images/rooftop.jpg" alt="Restoran 7">
+            <h4>Rooftop Lounge</h4>
+            <div class="info-container">
+                <div class="info-left">
+                    Rooftop Lounge, şehir manzarasına karşı keyifli bir akşam yemeği deneyimi sunar. Modern yemekler ve kaliteli içecekler eşliğinde unutulmaz bir akşam geçirebilirsiniz.
+                </div>
+                <div class="info-right">
+                    <p class="section-title">Tarz:</p>
+                    <p>Akşam Yemeği / İçki</p>
+                    <p class="section-title">Mutfak Türü:</p>
+                    <p>Uluslararası, Modern</p>
+                    <p class="section-title">Kıyafet Zorunluluğu:</p>
+                    <p>Şık Kıyafet</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Barlar Başlığı -->
+    <div class="restaurant-section">
+        <h2>BARLAR</h2>
+    </div>
+
+
+    <!-- Bar Kartları-->
+    <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+        <div class="gallery-cell">
+            <img src="~/images/bar1.jpg" alt="Bar 1">
+            <h4>Tropical Tiki Bar</h4>
+            <div class="info-container">
+                <div class="info-left">
+                    Tropical Tiki Bar, egzotik içecekleri ve tropikal kokteylleriyle ünlüdür. Deniz manzarası eşliğinde rahatlatıcı bir akşam geçirmek için ideal bir yerdir.
+                </div>
+                <div class="info-right">
+                    <p class="section-title">Tarz:</p>
+                    <p>İçki & Atıştırmalık</p>
+                    <p class="section-title">Mutfak Türü:</p>
+                    <p>Tropikal, Kokteyl</p>
+                    <p class="section-title">Kıyafet Zorunluluğu:</p>
+                    <p>Rahat</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="gallery-cell">
+            <img src="~/images/bar2.jpg" alt="Bar 2">
+            <h4>Classic Wine Bar</h4>
+            <div class="info-container">
+                <div class="info-left">
+                    Classic Wine Bar, seçkin şarap koleksiyonu ve gurme atıştırmalıkları ile öne çıkar. Şarap tadımları ve romantik akşam yemekleri için mükemmel bir atmosfer sunar.
+                </div>
+                <div class="info-right">
+                    <p class="section-title">Tarz:</p>
+                    <p>Şarap & Atıştırmalık</p>
+                    <p class="section-title">Mutfak Türü:</p>
+                    <p>Şarap, Gurme</p>
+                    <p class="section-title">Kıyafet Zorunluluğu:</p>
+                    <p>Şık</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery-cell">
+            <img src="~/images/bar3.jpg" alt="Bar 3">
+            <h4>Ocean Breeze Bar</h4>
+            <div class="info-container">
+                <div class="info-left">
+                    Ocean Breeze Bar, deniz manzarası eşliğinde geniş bir içki menüsü sunar. Rahat atmosferi ve taze deniz ürünleriyle tatilinizi daha keyifli hale getirebilirsiniz.
+                </div>
+                <div class="info-right">
+                    <p class="section-title">Tarz:</p>
+                    <p>İçki & Atıştırmalık</p>
+                    <p class="section-title">Mutfak Türü:</p>
+                    <p>Deniz Ürünleri, Kokteyl</p>
+                    <p class="section-title">Kıyafet Zorunluluğu:</p>
+                    <p>Rahat</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery-cell">
+            <img src="~/images/bar4.jpg" alt="Bar 4">
+            <h4>Sunset Lounge</h4>
+            <div class="info-container">
+                <div class="info-left">
+                    Sunset Lounge, muhteşem gün batımı manzaraları eşliğinde kokteyller ve hafif atıştırmalıklar sunar. Rahat ve şık atmosferiyle tatilinizi keyifli hale getirir.
+                </div>
+                <div class="info-right">
+                    <p class="section-title">Tarz:</p>
+                    <p>Kokteyl & Atıştırmalık</p>
+                    <p class="section-title">Mutfak Türü:</p>
+                    <p>Uluslararası</p>
+                    <p class="section-title">Kıyafet Zorunluluğu:</p>
+                    <p>Akşam Şıklığı</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery-cell">
+            <img src="~/images/bar5.jpg" alt="Bar 5">
+            <h4>Beachfront Bar</h4>
+            <div class="info-container">
+                <div class="info-left">
+                    Beachfront Bar, plaj kenarında taze deniz ürünleri ve ferahlatıcı içecekler sunar. Deniz kıyısındaki bu bar, serinlemek ve rahatlamak için mükemmel bir mekandır.
+                </div>
+                <div class="info-right">
+                    <p class="section-title">Tarz:</p>
+                    <p>İçki & Deniz Ürünleri</p>
+                    <p class="section-title">Mutfak Türü:</p>
+                    <p>Deniz Ürünleri</p>
+                    <p class="section-title">Kıyafet Zorunluluğu:</p>
+                    <p>Rahat</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery-cell">
+            <img src="~/images/bar6.jpg" alt="Bar 6">
+            <h4>Skyline Rooftop Bar</h4>
+            <div class="info-container">
+                <div class="info-left">
+                    Skyline Rooftop Bar, şehrin muhteşem manzaraları eşliğinde içecekler ve tapaslar sunar. Yüksek bir konumda yer alan bu bar, geceyi keyifli bir şekilde geçirmenizi sağlar.
+                </div>
+                <div class="info-right">
+                    <p class="section-title">Tarz:</p>
+                    <p>İçki & Tapas</p>
+                    <p class="section-title">Mutfak Türü:</p>
+                    <p>Uluslararası</p>
+                    <p class="section-title">Kıyafet Zorunluluğu:</p>
+                    <p>Şık</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery-cell">
+            <img src="~/images/bar7.jpg" alt="Bar 7">
+            <h4>Tropical Oasis Bar</h4>
+            <div class="info-container">
+                <div class="info-left">
+                    Tropical Oasis Bar, tropikal kokteyller ve egzotik atıştırmalıklar sunar. Renkli ve canlı dekorasyonu ile adeta bir tatil cennetindeymiş gibi hissedeceksiniz.
+                </div>
+                <div class="info-right">
+                    <p class="section-title">Tarz:</p>
+                    <p>Kokteyl & Atıştırmalık</p>
+                    <p class="section-title">Mutfak Türü:</p>
+                    <p>Egzotik</p>
+                    <p class="section-title">Kıyafet Zorunluluğu:</p>
+                    <p>Rahat</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.pkgd.min.js"></script>
+    <script>
+        var flkty = new Flickity('.js-flickity', {
+            wrapAround: true,
+            pageDots: false,
+            prevNextButtons: true
+        });
+
+        function scrollToCell(index) {
+            flkty.select(index);
+        }
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Zoom in ve Zoom out efekti
+            const roomCard = document.querySelector('.room-card');
+
+            function startZoomEffect() {
+                roomCard.style.transition = 'transform 10s ease-in-out'; // Geçiş süresi
+                roomCard.style.transform = 'scale(1.15)'; // Başlangıçta biraz büyütme
+
+                setInterval(() => {
+                    roomCard.style.transform = roomCard.style.transform === 'scale(1.15)' ? 'scale(1)' : 'scale(1.15)';
+                }, 5000); // 5 saniyede bir büyütme ve küçültme
+            }
+            startZoomEffect();
+            // Hover efekti için
+            roomCard.addEventListener('mouseover', () => {
+                roomCard.style.transition = 'transform 0.3s ease'; // Hover geçiş süresi
+                roomCard.style.transform = 'scale(1.3)'; // Hover sırasında %30 büyütme
+            });
+
+            roomCard.addEventListener('mouseout', () => {
+                roomCard.style.transition = 'transform 0.3s ease'; // Hover geçiş süresi
+                roomCard.style.transform = 'scale(1)'; // Hover sonrası normal boyut
+            });
+
+            // Diğer efektler veya işlevler buraya eklenebilir
+        });
+    </script>
+</body>
+</html>
+

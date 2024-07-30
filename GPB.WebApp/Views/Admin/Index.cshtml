@@ -1,0 +1,47 @@
+﻿@using GPB.Application.Dtos.AdminDto
+@model IEnumerable<GetByIdAdminDto>;
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/site.css" /> <!-- CSS dosyanızı bağlayın -->
+</head>
+<body>
+    <div class="container">
+        <h1>@ViewData["Title"]</h1>
+
+        <p>
+            <a href="@Url.Action("Create")" class="btn btn-primary">Create New Admin</a>
+        </p>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>User Name</th>
+                    <th>Email</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var admin in Model)
+                {
+                    <tr>
+                        <td>@admin.AdminId</td>
+                        <td>@admin.UserName</td>
+                        <td>@admin.Mail</td>
+                        <td>
+                            <a href="@Url.Action("Edit", new { id = admin.AdminId })" class="btn btn-warning">Edit</a>
+                            <a href="@Url.Action("Delete", new { id = admin.AdminId })" class="btn btn-danger">Delete</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+    <script src="~/js/site.js"></script> <!-- JavaScript dosyanızı bağlayın -->
+</body>
+</html>
+

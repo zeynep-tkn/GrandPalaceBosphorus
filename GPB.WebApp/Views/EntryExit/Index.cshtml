@@ -1,0 +1,56 @@
+﻿@using GPB.Application.Dtos.EntryExitDto
+@model IEnumerable<GetByIdEntryExitDto>;
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/site.css" /> <!-- CSS dosyanızı bağlayın -->
+</head>
+<body>
+    <div class="container">
+        <h1>@ViewData["Title"]</h1>
+
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Entry Time</th>
+                    <th>Exit Time</th>
+                    <th>User Name</th>
+                    <th>Role</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model != null && Model.Any())
+                {
+                    foreach (var record in Model)
+                    {
+                        <tr>
+                            <td>@record.EntryTime.ToString("dd MMM yyyy HH:mm")</td>
+                            <td>@record.ExitTime.ToString("dd MMM yyyy HH:mm")</td>
+                            <td>@record.ReservationId</td>
+                            <td>@record.Status</td>
+                            <td>
+                                <a href="@Url.Action("Edit", new { id = record.ReservationId })" class="btn btn-primary">Edit</a>
+                                <a href="@Url.Action("Delete", new { id = record.ReservationId })" class="btn btn-danger">Delete</a>
+                            </td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr>
+                        <td colspan="5">No records found.</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+        <a href="@Url.Action("Create")" class="btn btn-success">Create New Record</a>
+    </div>
+
+    <script src="~/js/site.js"></script> <!-- JavaScript dosyanızı bağlayın -->
+</body>
+</html>
+

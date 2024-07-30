@@ -1,0 +1,219 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ünal İstanbul Bosphorus Teklifler Sayfası</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        /* Başlık konteyneri stilleri */
+        .header-container {
+            position: relative;
+            width: 100%;
+            height: 700px;
+            overflow: hidden;
+        }
+
+            .header-container img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: transform 0.6s ease;
+                z-index: 0; /* Arka plan görselinin z-index değeri */
+            }
+
+                .header-container img:hover {
+                    transform: scale(1.2); /* Görsel üzerine gelince %20 daha büyük olacak şekilde büyüme efekti */
+                }
+
+        .header-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            color: white;
+            z-index: 1;
+            padding: 20px; /* Üstten ve soldan boşluk bırakmak için */
+            text-align: center;
+            width: 100%;
+        }
+
+        .hotel-logo {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin-bottom: 0.5em;
+            z-index: 2; /* Hotel adı ve logo için z-index değeri */
+        }
+
+            .hotel-logo i {
+                font-size: 1.5em;
+                margin-right: 0.5em;
+            }
+
+        .hotel-name {
+            font-size: 1.8em; /* Yazı boyutu büyütüldü */
+            font-weight: bold; /* Kalın font */
+            font-style: italic;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Hafif gölgeleme */
+        }
+
+        .general-overview {
+            font-size: 3.5em; /* Yazı boyutu büyütüldü */
+            font-weight: bold; /* Kalın font */
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Hafif gölgeleme */
+        }
+
+
+        .offers-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 40px; /* Kartlar arası boşluk */
+            padding: 20px;
+            margin-top: 40px; /* Header ile ilk kart arasındaki boşluk */
+        }
+
+        .offer {
+            display: flex;
+            width: calc(50% - 20px); /* İki sütunlu düzen için */
+            background-color: black;
+            box-shadow: 0 4px 8px white;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+
+            .offer img {
+                width: 40%;
+                height: auto;
+                object-fit: cover;
+                transition: transform 0.3s ease;
+            }
+
+        .offer-info {
+            padding: 20px;
+            width: 60%;
+        }
+
+        .offer-title {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: white;
+            font-weight: bold;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5px;
+        }
+
+        .offer-description {
+            font-size: 1em;
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        .offer-button {
+            padding: 10px 20px;
+            background-color: white;
+            color: black;
+            text-decoration: none;
+            font-size: 1em;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            display: inline-block;
+        }
+
+            .offer-button:hover {
+                background-color: white; /* Buton hover durumunda biraz daha açık bir ton */
+                transform: scale(1.1); /* Buton hover durumunda %10 büyüme */
+            }
+
+        /* Büyüme efekti */
+        .header:hover img {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <!-- Header konteyneri -->
+        <div class="header-container">
+            <!-- Header görseli -->
+            <img src="~/images/otellobi.jpeg">
+            <!-- Header overlay -->
+            <div class="header-overlay">
+                <!-- Otel logo ve adı -->
+                <div class="hotel-logo">
+                    <i class="fas fa-hotel"></i>
+                    <h1 class="hotel-name">Ünal İstanbul <br /> Bosphorus</h1>
+                </div>
+                <!-- Genel bakış başlığı -->
+                <div class="general-overview">Teklifler</div>
+            </div>
+        </div>
+    </header>
+
+    <div class="offers-container">
+        <div class="offer">
+            <img src="https://via.placeholder.com/600x400" alt="Teklif 1">
+            <div class="offer-info">
+                <div class="offer-title">Seyahat Nabzı</div>
+                <div class="offer-description">Erken rezervasyon yaparak avantajlardan faydalanın.</div>
+                <a href="/Offers/TravelPulse" class="offer-button" onclick="goToDetailsPage('SeyehatNabzi');">Daha Fazla Detay</a>
+            </div>
+        </div>
+        <div class="offer">
+            <img src="https://via.placeholder.com/600x400" alt="Teklif 2">
+            <div class="offer-info">
+                <div class="offer-title">Erken Rezervasyon</div>
+                <div class="offer-description">Erken rezervasyon yaparak %20 indirim kazanın.</div>
+                <a href="/Offers/EarlyReservation" class="offer-button" onclick="goToDetailsPage('ErkenRezervasyon');">Daha Fazla Detay</a>
+            </div>
+        </div>
+        <div class="offer">
+            <img src="https://via.placeholder.com/600x400" alt="Teklif 3">
+            <div class="offer-info">
+                <div class="offer-title">Aile Paketi</div>
+                <div class="offer-description">Aile tatillerinizde özel indirimlerden yararlanın.</div>
+                <a href="/Offers/FamilyPackage" class="offer-button" onclick="goToDetailsPage('AilePaketi');">Daha Fazla Detay</a>
+            </div>
+        </div>
+        <div class="offer">
+            <img src="https://via.placeholder.com/600x400" alt="Teklif 4">
+            <div class="offer-info">
+                <div class="offer-title">3 kal 2 öde</div>
+                <div class="offer-description">Boğaz'daki muhteşem manzaralı otelimizde unutulmaz bir konaklama deneyimi yaşayın.</div>
+                <a href="/Offers/StayThreePayTwo" class="offer-button" onclick="goToDetailsPage('üçkalikiöde');">Daha Fazla Detay</a>
+            </div>
+        </div>
+        <div class="offer">
+            <img src="https://via.placeholder.com/600x400" alt="Teklif 5">
+            <div class="offer-info">
+                <div class="offer-title">Romantik Kaçamak</div>
+                <div class="offer-description">Özel günlerinizde unutulmaz anılar biriktirin.</div>
+                <a href="/Offers/RomanticGetaway" class="offer-button" onclick="goToDetailsPage('RomantikKaçamak');">Daha Fazla Detay</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function goToDetailsPage(roomType) {
+            var url = '/Teklifler/' + roomType; // Oda türüne göre URL oluşturma
+            window.location.href = url; // Belirtilen URL'e yönlendirme
+        }
+
+    </script>
+
+</body>
+</html>
+
