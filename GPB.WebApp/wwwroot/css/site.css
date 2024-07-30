@@ -1,0 +1,661 @@
+﻿/* Temel font boyutunu ayarlar */
+html {
+    font-size: 14px;
+}
+
+/* Ekran genişliği 768px ve üzeri olduğunda font boyutunu 16px yapar */
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+/* Farklı form elemanları ve butonlar için odaklanma (focus) durumunda uygulanan kutu gölgesi */
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+/* HTML elemanının konumunu ve minimum yüksekliğini ayarlar */
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+/* Sayfanın alt kısmında margin ekler */
+body {
+    margin: 0; /* Kenar boşluklarını sıfırlar */
+    padding: 0; /* Kenar boşluklarını sıfırlar */
+    box-sizing: border-box;
+}
+
+/* Genel container stili */
+.container-fluid {
+    padding: 0 15px; /* Kenar boşlukları ekler */
+    max-width: 100%; /* Konteyner genişliği */
+}
+
+/* Sayfa içeriğini sağa ve sola hizalar */
+.container, .container-fluid {
+    width: 100%; /* Sayfanın genişliği */
+}
+
+/* Header ve footer için stil */
+header, footer {
+    width: 100%; /* Header ve footer genişliği */
+}
+
+
+/* Footer Stili */
+footer {
+    background-color: #111;
+    color: #fff;
+    padding: 50px 0;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo, .footer-contact, .footer-links, .footer-collections {
+    flex: 1;
+    margin: 20px;
+}
+
+    .footer-logo h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .footer-logo img {
+        font-size: 30px;
+        width: 180px;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+
+    .footer-logo p {
+        margin-bottom: 20px;
+    }
+
+    .footer-logo .social-icons a {
+        color: #fff;
+        margin-right: 10px;
+        font-size: 20px;
+        text-decoration: none;
+    }
+
+    .footer-contact h3, .footer-links h3, .footer-collections h3 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .footer-contact p {
+        margin-bottom: 20px;
+    }
+
+    .footer-contact a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .footer-links ul {
+        list-style: none;
+        padding: 0;
+    }
+
+        .footer-links ul li {
+            margin-bottom: 10px;
+        }
+
+            .footer-links ul li a {
+                color: #fff;
+                text-decoration: none;
+            }
+
+    .footer-collections .collection-images {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+        .footer-collections .collection-images img {
+            width: 80px;
+            height: 80px;
+            margin: 5px;
+            border-radius: 5px;
+        }
+
+.footer-bottom {
+    background-color: #000;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+    .footer-bottom p {
+        margin: 0;
+        font-size: 14px;
+    }
+
+/* Mobil Ekranlar için Responsive Ayarlar */
+@media (max-width: 767px) {
+    footer {
+        padding: 1rem; /* Küçük ekranlar için padding azaltılır */
+    }
+}
+
+/* -------------------------------------------------------*/
+/* HİZMETLER SAYFASI */
+/* hizmet ve olanaklar kart bölümü */
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Yalnızca yatay taşmayı engeller */
+    background-color: black;
+}
+
+
+.service-header {
+    background-color: #000;
+    color: #fff;
+    padding: 30px;
+    margin-top: 60px;
+    text-align: center;
+    height: auto; /* İçerik yüksekliğine uyum sağlar */
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    font-family: 'Courier New';
+}
+
+.service-list {
+    display: grid; /* Grid yapısı kullanarak düzenler */
+    grid-template-columns: repeat(3, 1fr); /* 3 sütunlu düzen */
+    gap: 10px; /* Hizmetler arasında boşluk */
+    padding: 0;
+    margin: 0;
+    justify-content: center; /* Hizmetleri ortalar */
+    list-style-type: none; /* Liste işaretlerini kaldırır */
+    max-width: 700px; /* Hizmetler listesinin maksimum genişliği */
+    margin-left: auto; /* Listeyi ortalar */
+    margin-right: auto; /* Listeyi ortalar */
+    margin-top: 40px;
+    font-family: Corbel;
+}
+
+/* Hizmet ve Olanaklar yazılarına | karakteri ekler */
+.service-item {
+    color: white; /* Beyaz metin */
+    font-size: 18px; /* Yazı boyutu */
+    text-decoration: underline; /* Altına çizgi */
+    padding: 15px; /* İç boşluk */
+    border-radius: 5px; /* Köşeleri yuvarlama */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Gölge */
+    text-align: center; /* Metni ortalar */
+    cursor: pointer; /* İşaretçi el simgesi */
+}
+
+/* Orta ekran ve üzeri için 3 sütunlu düzen */
+@media (min-width: 576px) {
+    .service-list {
+        grid-template-columns: repeat(3, 1fr); /* 3 sütunlu düzen */
+    }
+}
+
+/* Küçük ekranlar için 2 sütunlu düzen */
+@media (max-width: 575px) {
+    .service-list {
+        grid-template-columns: repeat(2, 1fr); /* Küçük ekranlarda 2 sütunlu düzen */
+    }
+}
+
+/* Hizmetler listesinde her 3 elemanı 1. satırda ve sonraki 3 elemanı 2. satırda olacak şekilde düzenleme */
+@media (min-width: 576px) {
+    .service-list {
+        grid-template-rows: repeat(2, auto); /* 2 satırlı düzen */
+        grid-template-columns: repeat(3, 1fr); /* 3 sütunlu düzen */
+    }
+}
+
+/* Her iki satırdaki elemanları ortalamak için */
+.service-list > .service-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Alt satırdaki elemanların hizalanması */
+@media (min-width: 576px) {
+    .service-item:nth-child(4),
+    .service-item:nth-child(5),
+    .service-item:nth-child(6) {
+        grid-column: span 1; /* 1 sütun genişliğinde */
+    }
+}
+
+/* HTML ve BODY'nin Yüksekliğini Ayarla */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+.room-carousel1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh; /* Görselin tam ekran yüksekliğinde olması için */
+    position: relative;
+    overflow: hidden;
+}
+
+.room-card-container1 {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease;
+}
+
+.room-card1 {
+    min-width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+    .room-card1 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Görselin kutuyu kaplamasını sağlar */
+        transition: transform 0.3s ease; /* Hover efekti için geçiş süresi */
+    }
+
+    .room-card1:hover img {
+        transform: scale(1.1); /* Hover sırasında %10 büyütme */
+        filter: brightness(80%); /* Hover sırasında görseli karartma */
+    }
+
+    .room-card1 h3 {
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 55px;
+        background: rgba(0, 0, 0, 0.2); /* Yarı saydam siyah arka plan */
+        padding: 10px 20px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight: bold;
+        border-radius: 5px;
+    }
+
+    .room-card1 h4 {
+        position: absolute;
+        top: 5%; /* Başlıktan sonra başlayacak şekilde */
+        left: 5%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 20px; /* Metin boyutu */
+        background: rgba(0, 0, 0, 0); /* Yarı saydam siyah arka plan */
+        padding: 0;
+        border-radius: 5px;
+        max-width: 80%;
+        text-align: center;
+        line-height: 1.5; /* Satır yüksekliği */
+    }
+
+
+/* İletişime Geçin Kartı */
+.contact-card1 {
+    position: absolute;
+    top: 87%; /* Görselin üst kısmından %70 aşağıda konumlandırılır */
+    left: 0; /* Sol kenardan sıfır mesafede konumlandırılır */
+    width: 100%; /* Kartın genişliğini tam sayfa genişliği yapar */
+    background: rgba(0, 0, 0, 0.6); /* Yarı saydam siyah arka plan */
+    color: white; /* Yazı rengi */
+    padding: 10px 30px; /* İç boşluk */
+    border-radius: 10px; /* Köşeleri yuvarlatır */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Gölge efekti */
+    text-align: center; /* İçerikleri ortala */
+    box-sizing: border-box; /* Padding ve border'ı genişliğe dahil eder */
+    display: flex; /* Flexbox düzeni */
+    flex-direction: column; /* Yüksekliği dikey hizalar */
+    align-items: center; /* Yatayda ortalar */
+}
+
+.contact-content1 {
+    text-align: center;
+    display: flex;
+    flex-direction: row; /* Yan yana yerleştirme */
+    align-items: center; /* Dikeyde ortalama */
+    gap: 10px; /* Başlık ve numara arasına boşluk ekler */
+    margin-bottom: 10px; /* Başlık ve numara arasına boşluk ekler */
+}
+
+    .contact-content1 span {
+        display: block;
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+.contact-phone1 {
+    color: #f4a261; /* Telefon numarasının rengi */
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+    .contact-phone1:hover {
+        color: #f76c6c; /* Hover efekti rengi */
+    }
+
+
+
+
+
+
+
+/* Otel Olanakları Bölümü */
+.facilities-section {
+    text-align: center; /* Başlık metnini ortalar */
+    margin-top: 30px;
+    padding: 0; /* Sol ve sağ kenarlardan boşluk bırakır */
+}
+
+/* Otel Olanakları Başlığı Kartı */
+.facilities-title {
+    font-size: 35px;
+    font-family: 'Courier New';
+    background-color: #000; /* Siyah arka plan rengi */
+    color: #fff; /* Beyaz yazı rengi */
+    padding: 35px; /* İç boşluk */
+    border-radius: 3px; /* Köşe yuvarlatma */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Gölge */
+    display: inline-block; /* Kartı içerik kadar genişletir */
+    margin: 0; /* Kartın etrafında boşluk bırakmaz */
+    max-width: 100%; /* Kartın genişliği ekran boyutuna uyum sağlar */
+    box-sizing: border-box; /* İç boşlukları ve border'ı genişlik ve yüksekliğe dahil eder */
+    width: 100%; /* Kartın tam genişlikte olmasını sağlar */
+    height: 100px;
+    padding: 30px; /* İç boşluk ayarlandı */
+    text-align: center; /* Başlık metnini ortalar */
+    background: #000; /* Arka plan siyah */
+    color: #fff; /* Metin rengi beyaz */
+}
+
+.offer-section {
+    position: relative;
+    width: 100%;
+    border-radius: 50px;
+    height: 80vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    z-index: 1000;
+}
+
+#prev-btn {
+    left: 10px;
+}
+
+#next-btn {
+    right: 10px;
+}
+
+.offer-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+    height: 100%;
+}
+
+.offer {
+    position: relative;
+    min-width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .offer img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+.info-box {
+    position: absolute;
+    left: 20px;
+    font-family: 'Courier New';
+    top: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 300px;
+    color: black;
+}
+
+
+/* Özlü Söz ve Görseller için Stil */
+.quote-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 40px;
+    margin: 40px 0; /* Üst ve alt için margin */
+}
+
+.quote-img-top {
+    width: 80px;
+    height: 70px;
+    margin: 10px auto; /* Üst ve alt için 10px, sağ ve sol için otomatik margin */
+    padding: 10px; /* Her taraftan 10px padding */
+    display: block; /* Görselin iç blok olarak görüntülenmesini sağlar */
+}
+
+.quote-img-bottom {
+    width: 80px;
+    height: 70px;
+    margin: 10px auto; /* Üst ve alt için 10px, sağ ve sol için otomatik margin */
+    padding: 10px; /* Her taraftan 10px padding */
+    display: block; /* Görselin iç blok olarak görüntülenmesini sağlar */
+}
+
+.quote {
+    margin-top: 20px;
+    font-size: 28px;
+    margin: 30px 200px; /* Ekran genişliğine göre margin */
+    font-style: italic;
+    font-family: 'Lucida Sans Unicode';
+    color: #555;
+    text-align: center;
+}
+
+/* Hizmetlerimiz Bölümü */
+.our-services {
+    background-color: rgba(0, 0, 0, 0.9);
+    margin-top: 20px;
+    padding: 50px 10px; /* Üst ve alt boşluk, yanlardan biraz boşluk */
+    /background-color: #f8f8f8;
+    / /* Hafif gri arka plan rengi */
+    text-align: center;
+}
+
+.services-heading {
+    font-size: 29px;
+    font-family: 'Courier New';
+    color: white; /* Koyu gri yazı rengi */
+    margin-bottom: 30px; /* Alt boşluk */
+}
+
+/* Hizmetler Konteyner */
+.services-container {
+    display: flex;
+    justify-content: space-between; /* Hizmetler arasında boşluk */
+    max-width: 1200px; /* Konteyner genişliğini sınırlamak için */
+    margin: 0 auto; /* Ortalamak için */
+}
+
+/* Sol ve Sağ Sütun */
+.service-column {
+    flex: 1; /* Her iki sütunu eşit genişlikte yapar */
+    padding: 10px;
+}
+
+/* Hizmetler Elemanları */
+.service-box {
+    /*background-color: rgba(128, 128, 128, 0.5); Beyaz arka plan rengi */
+    font-family: 'Courier New';
+    color: white; /* Koyu gri yazı rengi */
+    font-size: 18px; /* Yazı boyutu */
+    padding: 10px; /* İç boşluk */
+    margin: 10px 0; /* Dış boşluk (üst ve alt) */
+    border-radius: 5px; /* Köşe yuvarlatma */
+    /*box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); Hafif gölge */
+    box-sizing: border-box; /* Kenar kutusu dahil */
+}
+
+/* Küçük Ekranlar İçin Hizmetler Elemanları */
+@media (max-width: 768px) {
+    .services-container {
+        flex-direction: column; /* Küçük ekranlarda sütunları alt alta getirir */
+        align-items: center; /* Hizmet kutularını ortalar */
+    }
+
+    .service-column {
+        width: 100%; /* Her iki sütunu tam genişlikte yapar */
+    }
+}
+
+
+
+/* Fitness - Özel Gemi Turu- Bebek Bakıcılığı Bölümü */
+/* HTML ve BODY'nin Yüksekliğini Ayarla */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+/* Genel Hizmet İçeriği */
+.service-content {
+    padding: 20px;
+}
+
+/* Fitness Bölümü */
+.fitness-section {
+    text-align: center;
+    padding: 140px 10px;
+    position: relative;
+}
+
+/* Görsel Konteyneri */
+.image-container {
+    position: relative;
+    width: 100%; /* Genişlik sayfa genişliğine göre ayarlanır */
+    height: 150px; /* Başlangıçta daha küçük bir yükseklik */
+    margin: 0 auto; /* Merkezi konumlandırma */
+    overflow: hidden; /* Resim dışında kalan kısmı gizler */
+    transition: transform 0.9s ease; /* Büyütme geçişi */
+    transform: scale(0.5); /* İlk başta %80 ölçekleme */
+}
+
+    /* Fitness Görseli */
+    .image-container img {
+        width: 100%;
+        height: auto; /* Görselin oranını korur */
+        max-height: 100%; /* Görselin yüksekliğini sınırlama */
+        object-fit: cover; /* Görselin kutuyu kaplamasını sağlar */
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hafif gölge */
+    }
+
+/* Overlay üzerine yazı */
+.fitness-overlay {
+    position: absolute;
+    top: 90%; /* Üstten %50 boşluk bırakır, ortada kalır */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Ortaya hizalar */
+    width: 100%; /* Genişlik %100 */
+    background: rgba(0, 0, 0, 0.5); /* Yarı saydam siyah arka plan */
+    color: #fff; /* Beyaz yazı rengi */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 5px;
+    box-sizing: border-box; /* İç boşlukları ve border'ı genişliğe dahil eder */
+    z-index: 10; /* Üstte görünür olması için */
+}
+
+/* Fitness başlığı */
+.fitness-title1 {
+    font-size: 24px;
+    font-family: 'Global User Interface';
+    font-weight: bold; /* Kalın yazı */
+    color: #fff; /* Beyaz yazı rengi */
+    margin-bottom: 10px; /* Alt boşluk */
+}
+
+/* Fitness bilgilendirme yazısı */
+.fitness-description {
+    font-size: 16px;
+    font-family: 'Microsoft New Tai Lue', sans-serif;
+    color: #fff; /* Beyaz yazı rengi */
+    text-align: center;
+    line-height: 1.6; /* Satır yüksekliği */
+}
+
+/* Scroll Effect için eklenen CSS */
+.fitness-image-container {
+    transform: scale(1); /* Varsayılan büyütme oranı */
+    transition: transform 0.4s ease; /* Büyütme geçişi */
+    height: 100vh; /* Kaydırma etkisi ile yüksekliği %100 görünürlük */
+    object-fit: cover; /* Görselin kutuyu kaplamasını sağlar */
+}
+
+    /* Scroll Effect için eklenen CSS */
+    .fitness-image-container.scroll-effect {
+        transform: scale(1.1); /* Görselin %10 büyütülmesi */
+        transition: transform 0.9s ease;
+    }
