@@ -30,8 +30,9 @@ Bu proje, ASP.NET 8 Core MVC kullanarak geliştirdiğimiz bir otel rezervasyon w
 
 
 ### Notlar:
-- **"username"**: zeynep-tkn
-- **"İsminiz" ve "E-posta adresiniz"**:Zeynep Tekin 
-- **"Arkadaşınızın İsmi" ve "Arkadaşınızın E-posta adresi"**: Gamze Ünal 
+- Kullanıcı Adı:**zeynep-tkn**
+- Ad:**"Zeynep Tekin**
+- Kullanıcı Adı:**gamzeunl**
+- Ad:**Gamze Ünal** 
 
 
