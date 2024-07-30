@@ -1,0 +1,23 @@
+{
+  "Version": 1,
+  "Hash": "TeSX1L2H2A39zF3y9q8wdf2fHEc5OK3Huu1QXCTKWAI=",
+  "Source": "GPB.Application",
+  "BasePath": "_content/GPB.Application",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.Domain\\GPB.Domain.csproj",
+      "Version": 2,
+      "Source": "GPB.Domain",
+      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained"
+    }
+  ],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
