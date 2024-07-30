@@ -24,7 +24,7 @@ Bu proje, ASP.NET 8 Core MVC kullanarak geliştirdiğimiz bir otel rezervasyon w
 
 ## Otel Rezervasyon Sitesi Görüntüleri
 
-###Ana Sayfa
+1.Ana Sayfa
 
 
 Otel Genel Bakış
