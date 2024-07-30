@@ -1,0 +1,597 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\GPB.WebApp.bundle.scp.css",
+      "PackagePath": "staticwebassets\\GPB.WebApp.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\images\\Adsız tasarım.jpg",
+      "PackagePath": "staticwebassets\\images\\Adsız tasarım.jpg"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\images\\CityView1.jpg",
+      "PackagePath": "staticwebassets\\images\\CityView1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\images\\Comfort1.jpg",
+      "PackagePath": "staticwebassets\\images\\Comfort1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\images\\Corner1.jpg",
+      "PackagePath": "staticwebassets\\images\\Corner1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\images\\Elegance1.avif",
+      "PackagePath": "staticwebassets\\images\\Elegance1.avif"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\images\\Elegance1.jpg",
+      "PackagePath": "staticwebassets\\images\\Elegance1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\images\\FamilyRoom1.jpg",
+      "PackagePath": "staticwebassets\\images\\FamilyRoom1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\images\\GPB.png",
+      "PackagePath": "staticwebassets\\images\\GPB.png"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\images\\Rooms.webp",
+      "PackagePath": "staticwebassets\\images\\Rooms.webp"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\images\\Terrace1.jpg",
+      "PackagePath": "staticwebassets\\images\\Terrace1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\images\\acik-havuz.jpg",
+      "PackagePath": "staticwebassets\\images\\acik-havuz.jpg"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\images\\ailepaketi1.jpg",
+      "PackagePath": "staticwebassets\\images\\ailepaketi1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\images\\anasayfa.jpeg",
+      "PackagePath": "staticwebassets\\images\\anasayfa.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\images\\background.jpg",
+      "PackagePath": "staticwebassets\\images\\background.jpg"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\images\\bar1.jpg",
+      "PackagePath": "staticwebassets\\images\\bar1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\images\\bar2.jpg",
+      "PackagePath": "staticwebassets\\images\\bar2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\images\\bar3.jpg",
+      "PackagePath": "staticwebassets\\images\\bar3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\images\\bar4.jpg",
+      "PackagePath": "staticwebassets\\images\\bar4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\images\\bar5.jpg",
+      "PackagePath": "staticwebassets\\images\\bar5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\images\\bar6.jpg",
+      "PackagePath": "staticwebassets\\images\\bar6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\images\\bar7.jpg",
+      "PackagePath": "staticwebassets\\images\\bar7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\images\\bebek-bak.jpg",
+      "PackagePath": "staticwebassets\\images\\bebek-bak.jpg"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\images\\bebek-bakiciligi.jpg",
+      "PackagePath": "staticwebassets\\images\\bebek-bakiciligi.jpg"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\images\\deniz-dugun.jpg",
+      "PackagePath": "staticwebassets\\images\\deniz-dugun.jpg"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\images\\denizurun.jpg",
+      "PackagePath": "staticwebassets\\images\\denizurun.jpg"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\images\\erken-rezervasyon.jpg",
+      "PackagePath": "staticwebassets\\images\\erken-rezervasyon.jpg"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\images\\erkenrezervasyon1.jpg",
+      "PackagePath": "staticwebassets\\images\\erkenrezervasyon1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\images\\etkinlikler.jpg",
+      "PackagePath": "staticwebassets\\images\\etkinlikler.jpg"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\images\\fitness.jpg",
+      "PackagePath": "staticwebassets\\images\\fitness.jpg"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\images\\genelbakis1.jpg",
+      "PackagePath": "staticwebassets\\images\\genelbakis1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\images\\genelbakis10.jpg",
+      "PackagePath": "staticwebassets\\images\\genelbakis10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\images\\genelbakis11.jpg",
+      "PackagePath": "staticwebassets\\images\\genelbakis11.jpg"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\images\\genelbakis12.jpg",
+      "PackagePath": "staticwebassets\\images\\genelbakis12.jpg"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\images\\genelbakis13.jpg",
+      "PackagePath": "staticwebassets\\images\\genelbakis13.jpg"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\images\\genelbakis14.jpg",
+      "PackagePath": "staticwebassets\\images\\genelbakis14.jpg"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\images\\genelbakis15.jpg",
+      "PackagePath": "staticwebassets\\images\\genelbakis15.jpg"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\images\\genelbakis16.jpg",
+      "PackagePath": "staticwebassets\\images\\genelbakis16.jpg"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\images\\genelbakis17.jpg",
+      "PackagePath": "staticwebassets\\images\\genelbakis17.jpg"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\images\\genelbakis18.jpg",
+      "PackagePath": "staticwebassets\\images\\genelbakis18.jpg"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\images\\genelbakis19.jpg",
+      "PackagePath": "staticwebassets\\images\\genelbakis19.jpg"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\images\\genelbakis2.jpg",
+      "PackagePath": "staticwebassets\\images\\genelbakis2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\images\\genelbakis20.jpg",
+      "PackagePath": "staticwebassets\\images\\genelbakis20.jpg"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\images\\genelbakis21.jpg",
+      "PackagePath": "staticwebassets\\images\\genelbakis21.jpg"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\images\\genelbakis22.jpg",
+      "PackagePath": "staticwebassets\\images\\genelbakis22.jpg"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\images\\genelbakis23.jpg",
+      "PackagePath": "staticwebassets\\images\\genelbakis23.jpg"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\images\\genelbakis3.jpg",
+      "PackagePath": "staticwebassets\\images\\genelbakis3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\images\\genelbakis4.jpg",
+      "PackagePath": "staticwebassets\\images\\genelbakis4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\images\\genelbakis5.jpg",
+      "PackagePath": "staticwebassets\\images\\genelbakis5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\images\\genelbakis6.jpg",
+      "PackagePath": "staticwebassets\\images\\genelbakis6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\images\\genelbakis7.jpg",
+      "PackagePath": "staticwebassets\\images\\genelbakis7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\images\\genelbakis8.jpg",
+      "PackagePath": "staticwebassets\\images\\genelbakis8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\images\\genelbakis9.jpg",
+      "PackagePath": "staticwebassets\\images\\genelbakis9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\images\\gizlilik.jpg",
+      "PackagePath": "staticwebassets\\images\\gizlilik.jpg"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\images\\gorsel1.jpg",
+      "PackagePath": "staticwebassets\\images\\gorsel1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\images\\gorsel2.jpg",
+      "PackagePath": "staticwebassets\\images\\gorsel2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\images\\gorsel3.jpg",
+      "PackagePath": "staticwebassets\\images\\gorsel3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\images\\gorsel4.jpg",
+      "PackagePath": "staticwebassets\\images\\gorsel4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\images\\gorsel5.jpg",
+      "PackagePath": "staticwebassets\\images\\gorsel5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\images\\gurme.jpg",
+      "PackagePath": "staticwebassets\\images\\gurme.jpg"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\images\\gurmerestoran.jpg",
+      "PackagePath": "staticwebassets\\images\\gurmerestoran.jpg"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\images\\hakkında.jpg",
+      "PackagePath": "staticwebassets\\images\\hakkında.jpg"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\images\\havuz.jpg",
+      "PackagePath": "staticwebassets\\images\\havuz.jpg"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\images\\isaret1.jpg",
+      "PackagePath": "staticwebassets\\images\\isaret1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\images\\isaret2.jpg",
+      "PackagePath": "staticwebassets\\images\\isaret2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\images\\kapali-havuz.jpg",
+      "PackagePath": "staticwebassets\\images\\kapali-havuz.jpg"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\images\\legourmet.jpg",
+      "PackagePath": "staticwebassets\\images\\legourmet.jpg"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\images\\masaj.jpg",
+      "PackagePath": "staticwebassets\\images\\masaj.jpg"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\images\\otel-bilgi.jpg",
+      "PackagePath": "staticwebassets\\images\\otel-bilgi.jpg"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\images\\otel.jpg",
+      "PackagePath": "staticwebassets\\images\\otel.jpg"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\images\\otellobi.jpeg",
+      "PackagePath": "staticwebassets\\images\\otellobi.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\images\\ozel-gemi.jpg",
+      "PackagePath": "staticwebassets\\images\\ozel-gemi.jpg"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\images\\restoran.jpg",
+      "PackagePath": "staticwebassets\\images\\restoran.jpg"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\images\\restoran.webp",
+      "PackagePath": "staticwebassets\\images\\restoran.webp"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\images\\rooftop.jpg",
+      "PackagePath": "staticwebassets\\images\\rooftop.jpg"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\images\\sef-yemek.jpg",
+      "PackagePath": "staticwebassets\\images\\sef-yemek.jpg"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\images\\seflerinmutfak.jpg",
+      "PackagePath": "staticwebassets\\images\\seflerinmutfak.jpg"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\images\\seyehatnabzı1.jpg",
+      "PackagePath": "staticwebassets\\images\\seyehatnabzı1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\images\\signaturesuite1.jpg",
+      "PackagePath": "staticwebassets\\images\\signaturesuite1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\images\\spa.jpg",
+      "PackagePath": "staticwebassets\\images\\spa.jpg"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\images\\sushi.jpg",
+      "PackagePath": "staticwebassets\\images\\sushi.jpg"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\images\\tropikal.jpg",
+      "PackagePath": "staticwebassets\\images\\tropikal.jpg"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\images\\yoga-ders.jpg",
+      "PackagePath": "staticwebassets\\images\\yoga-ders.jpg"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\it.stajyer\\source\\repos\\Deneme.GrandPalaceBosphorus\\GPB.WebApp\\wwwroot\\videos\\genelbakisvideo.mp4",
+      "PackagePath": "staticwebassets\\videos\\genelbakisvideo.mp4"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.GPB.WebApp.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.GPB.WebApp.props",
+      "PackagePath": "build\\GPB.WebApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.GPB.WebApp.props",
+      "PackagePath": "buildMultiTargeting\\GPB.WebApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.GPB.WebApp.props",
+      "PackagePath": "buildTransitive\\GPB.WebApp.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

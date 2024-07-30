@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\GPB.WebApp.props" />
+</Project>

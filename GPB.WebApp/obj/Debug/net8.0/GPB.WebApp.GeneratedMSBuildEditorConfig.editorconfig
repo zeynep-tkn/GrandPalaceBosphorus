@@ -1,0 +1,195 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = GPB.WebApp
+build_property.RootNamespace = GPB.WebApp
+build_property.ProjectDir = C:\Users\it.stajyer\source\repos\Deneme.GrandPalaceBosphorus\GPB.WebApp\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\it.stajyer\source\repos\Deneme.GrandPalaceBosphorus\GPB.WebApp
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/it.stajyer/source/repos/Deneme.GrandPalaceBosphorus/GPB.WebApp/Views/Account/ConfirmEmail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxDb25maXJtRW1haWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/it.stajyer/source/repos/Deneme.GrandPalaceBosphorus/GPB.WebApp/Views/Account/LoginRegister.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpblJlZ2lzdGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/it.stajyer/source/repos/Deneme.GrandPalaceBosphorus/GPB.WebApp/Views/Admin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/it.stajyer/source/repos/Deneme.GrandPalaceBosphorus/GPB.WebApp/Views/EntryExit/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW50cnlFeGl0XENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/it.stajyer/source/repos/Deneme.GrandPalaceBosphorus/GPB.WebApp/Views/EntryExit/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW50cnlFeGl0XEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/it.stajyer/source/repos/Deneme.GrandPalaceBosphorus/GPB.WebApp/Views/EntryExit/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW50cnlFeGl0XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/it.stajyer/source/repos/Deneme.GrandPalaceBosphorus/GPB.WebApp/Views/Guest/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3Vlc3RcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/it.stajyer/source/repos/Deneme.GrandPalaceBosphorus/GPB.WebApp/Views/Home/HotelOverview.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxIb3RlbE92ZXJ2aWV3LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/it.stajyer/source/repos/Deneme.GrandPalaceBosphorus/GPB.WebApp/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/it.stajyer/source/repos/Deneme.GrandPalaceBosphorus/GPB.WebApp/Views/Home/Offers.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxPZmZlcnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/it.stajyer/source/repos/Deneme.GrandPalaceBosphorus/GPB.WebApp/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/it.stajyer/source/repos/Deneme.GrandPalaceBosphorus/GPB.WebApp/Views/Home/Restaurant.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSZXN0YXVyYW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/it.stajyer/source/repos/Deneme.GrandPalaceBosphorus/GPB.WebApp/Views/Home/Room.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSb29tLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/it.stajyer/source/repos/Deneme.GrandPalaceBosphorus/GPB.WebApp/Views/Home/Services.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTZXJ2aWNlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/it.stajyer/source/repos/Deneme.GrandPalaceBosphorus/GPB.WebApp/Views/Offers/EarlyReservation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2ZmZXJzXEVhcmx5UmVzZXJ2YXRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/it.stajyer/source/repos/Deneme.GrandPalaceBosphorus/GPB.WebApp/Views/Offers/FamilyPackage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2ZmZXJzXEZhbWlseVBhY2thZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/it.stajyer/source/repos/Deneme.GrandPalaceBosphorus/GPB.WebApp/Views/Offers/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2ZmZXJzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/it.stajyer/source/repos/Deneme.GrandPalaceBosphorus/GPB.WebApp/Views/Offers/RomanticGetaway.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2ZmZXJzXFJvbWFudGljR2V0YXdheS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/it.stajyer/source/repos/Deneme.GrandPalaceBosphorus/GPB.WebApp/Views/Offers/StayThreePayTwo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2ZmZXJzXFN0YXlUaHJlZVBheVR3by5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/it.stajyer/source/repos/Deneme.GrandPalaceBosphorus/GPB.WebApp/Views/Offers/TravelPulse.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2ZmZXJzXFRyYXZlbFB1bHNlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/it.stajyer/source/repos/Deneme.GrandPalaceBosphorus/GPB.WebApp/Views/Reservation/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YXRpb25cQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/it.stajyer/source/repos/Deneme.GrandPalaceBosphorus/GPB.WebApp/Views/Reservation/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YXRpb25cRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/it.stajyer/source/repos/Deneme.GrandPalaceBosphorus/GPB.WebApp/Views/Reservation/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YXRpb25cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/it.stajyer/source/repos/Deneme.GrandPalaceBosphorus/GPB.WebApp/Views/Room/CityViewRoom.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9vbVxDaXR5Vmlld1Jvb20uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/it.stajyer/source/repos/Deneme.GrandPalaceBosphorus/GPB.WebApp/Views/Room/ComfortRoom.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9vbVxDb21mb3J0Um9vbS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/it.stajyer/source/repos/Deneme.GrandPalaceBosphorus/GPB.WebApp/Views/Room/CornerRoom.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9vbVxDb3JuZXJSb29tLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/it.stajyer/source/repos/Deneme.GrandPalaceBosphorus/GPB.WebApp/Views/Room/DeluxeSuite.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9vbVxEZWx1eGVTdWl0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/it.stajyer/source/repos/Deneme.GrandPalaceBosphorus/GPB.WebApp/Views/Room/EleganceRoom.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9vbVxFbGVnYW5jZVJvb20uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/it.stajyer/source/repos/Deneme.GrandPalaceBosphorus/GPB.WebApp/Views/Room/FamilyRoom.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9vbVxGYW1pbHlSb29tLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/it.stajyer/source/repos/Deneme.GrandPalaceBosphorus/GPB.WebApp/Views/Room/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9vbVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/it.stajyer/source/repos/Deneme.GrandPalaceBosphorus/GPB.WebApp/Views/Room/PanoramicSuite.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9vbVxQYW5vcmFtaWNTdWl0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/it.stajyer/source/repos/Deneme.GrandPalaceBosphorus/GPB.WebApp/Views/Room/PenthouseSuite.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9vbVxQZW50aG91c2VTdWl0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/it.stajyer/source/repos/Deneme.GrandPalaceBosphorus/GPB.WebApp/Views/Room/PresidentialSuite.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9vbVxQcmVzaWRlbnRpYWxTdWl0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/it.stajyer/source/repos/Deneme.GrandPalaceBosphorus/GPB.WebApp/Views/Room/RoyalSuite.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9vbVxSb3lhbFN1aXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/it.stajyer/source/repos/Deneme.GrandPalaceBosphorus/GPB.WebApp/Views/Room/SignatureSuite.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9vbVxTaWduYXR1cmVTdWl0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/it.stajyer/source/repos/Deneme.GrandPalaceBosphorus/GPB.WebApp/Views/Room/TerraceRoom.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9vbVxUZXJyYWNlUm9vbS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/it.stajyer/source/repos/Deneme.GrandPalaceBosphorus/GPB.WebApp/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/it.stajyer/source/repos/Deneme.GrandPalaceBosphorus/GPB.WebApp/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/it.stajyer/source/repos/Deneme.GrandPalaceBosphorus/GPB.WebApp/Views/User/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/it.stajyer/source/repos/Deneme.GrandPalaceBosphorus/GPB.WebApp/Views/User/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/it.stajyer/source/repos/Deneme.GrandPalaceBosphorus/GPB.WebApp/Views/User/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/it.stajyer/source/repos/Deneme.GrandPalaceBosphorus/GPB.WebApp/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/it.stajyer/source/repos/Deneme.GrandPalaceBosphorus/GPB.WebApp/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/it.stajyer/source/repos/Deneme.GrandPalaceBosphorus/GPB.WebApp/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-8ye79dqbc7
