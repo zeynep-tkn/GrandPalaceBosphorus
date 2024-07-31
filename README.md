@@ -23,26 +23,9 @@ Bu proje, ASP.NET 8 Core MVC kullanarak geliştirdiğimiz bir otel rezervasyon w
 - **JavaScript**: Dinamik ve etkileşimli öğeler sağlar.
 
 ## Otel Rezervasyon Sitesi Görüntüleri
-
-1.Ana Sayfa
-
-
-Otel Genel Bakış
-
-
-Konaklama
-
-
-Restoran
-
-
-Teklifler
-
-
-Kayıt Ol / Giriş Yap
-
-
-Hizmetlerimiz
+<img src="images1/1.png" alt="Logo" width="200" height="400">
+<img src="images1/2.png" alt="Logo" width="200" height="400">
+<img src="images1/3.png" alt="Logo" width="200" height="400">
 
 
 
